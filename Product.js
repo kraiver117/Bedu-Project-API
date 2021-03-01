@@ -1,4 +1,4 @@
-class Products{
+class Product{
     constructor(id, full_Name, brand, description, category, price, inStock, image, createdAt, updatedAt){
         this.id = id;
         this.full_Name = full_Name; 

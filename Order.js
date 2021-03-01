@@ -1,4 +1,4 @@
-class Orders {
+class Order {
     constructor(User, OrderItems, ShippingAddress, paymentMethod, 
                 totalPrice, shippingPrice, isPaid, paidAt, isDelivered,
                 deliveredAt, createdAt, updatedAt)
