@@ -6,7 +6,7 @@ function createProduct(req, res) {
 }
 
 function updateProduct(req, res) {
-  var product1 = new Product(1, "Monitor Gaming", "Lenovo", "21.5 pulgadas", "Monitor", 1000, 5, "37786487t3.jpg", "28/02/2021", "28/02/2021");
+  var product1 = new Product(Number(req.params.id), "Monitor Gaming", "Lenovo", "21.5 pulgadas", "Monitor", 1000, 5, "37786487t3.jpg", "28/02/2021", "28/02/2021");
   var modificaciones = req.body;
   product1 = { ...product1, ...modificaciones };
   res.send(product1);

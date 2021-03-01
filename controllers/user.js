@@ -2,11 +2,12 @@ const User = require("../models/User");
 
 function createUser(req, res) {
   const user = new User(req.body);
+  console.log(user);
   res.status(201).send(user);
 }
 
 function updateUser(req, res) {
-  var user1 = new User(1, "Juan Perez", "juanperez@gmail.com", "juan1234", false, "28/02/2021", "28/02/2021");
+  var user1 = new User(Number(req.params.id), "Juan Perez", "juanperez@gmail.com", "juan1234", false, "28/02/2021", "28/02/2021");
   var modificaciones = req.body;
   user1 = { ...user1, ...modificaciones };
   res.send(user1);

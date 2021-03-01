@@ -6,7 +6,7 @@ function createOrder(req, res) {
 }
 
 function updateOrder(req, res) {
-  var order1 = new Order(1, '[{"productoId":2, "cantidad":2},{"productoId":2, "cantidad":2}]', "CDMX", "Paypal", 
+  var order1 = new Order(Number(req.params.id), '[{"productoId":2, "cantidad":2},{"productoId":2, "cantidad":2}]', "CDMX", "Paypal", 
                         900, 100, true, "27/02/2021", true,
                         "28/02/2021", "27/02/2021", "27/02/2021");
 
