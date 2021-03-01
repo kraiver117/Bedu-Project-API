@@ -19,3 +19,5 @@ class User {
 
     deleteUser() {}
 }
+
+module.exports = User
