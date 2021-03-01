@@ -23,3 +23,5 @@ class Order {
     getOrders() {}
     
 }
+
+module.exports = Order;
