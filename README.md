@@ -7,7 +7,7 @@
 
 ![](https://i.ibb.co/m8WGC1w/Modelo-Relacional.jpg)
 
-** Comandos SQL para la creación de la base de datos y tablas **
+**Comandos SQL para la creación de la base de datos y tablas**
 
 ![](https://i.ibb.co/6HjJxvH/Descripci-n-Tablas.png)
 
