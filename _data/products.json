@@ -1,0 +1,122 @@
+[
+    {
+        "_id": "5faf866af74d3104bc3cec23",
+        "price": 4000,
+        "inStock": 11,
+        "full_name": "Monitor ASUS VG279QR",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
+        "description": "Monitor gaming con alta tasa de refresco 165 Hz 27\"",
+        "brand": "ASUS",
+        "category": "Monitor",
+        "createdAt": "2020-01-18T21:26:02.834Z",
+        "updatedAt": "2020-02-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec24",
+        "price": 2500,
+        "inStock": 47,
+        "full_name": "SSD Kingston A2000 NVMe, 1TB, PCI Express 3.0, M2",
+        "image": "https://www.cyberpuerta.mx/img/product/XL/CP-KINGSTON-SA2000M81000G-1.jpg",
+        "description": "Capacidad: 1000 GB, Interface: PCI Express 3.0, Velocidad de lectura: 2200 MB/s, Velocidad de escritura: 2000 MB/s",
+        "brand": "Kingston",
+        "category": "Unidad de almacenamiento",
+        "createdAt": "2020-11-18T19:26:02.834Z",
+        "updatedAt": "2020-11-20T20:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec25",
+        "price": 6000,
+        "inStock": 5,
+        "full_name": "Monitor Gamer Curvo Samsung LC27F390FHL LED 27'', Full HD, Widescreen, FreeSync, HDMI, Negro",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
+        "description": "Monitor gaming con una tasa de refresco de 60Hz, resolución de 1920x1080 pixeles, FullHD",
+        "brand": "Samsung",
+        "category": "Monitor",
+        "createdAt": "2020-05-13T19:26:02.834Z",
+        "updatedAt": "2020-05-19T21:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec26",
+        "price": 2500,
+        "inStock": 53,
+        "full_name": "Tarjeta Madre Gigabyte micro ATX B450M DS3H V2, S-AM4, AMD B450, HDMI, 128GB DDR4 para AMD",
+        "image": "https://www.cyberpuerta.mx/img/product/XL/CP-GIGABYTE-B450MDS3HV2-3.jpg",
+        "description": "Circuito integrado de tarjeta madre: AMD B450, Socket de procesador: Socket AM4, Circuito integrado: AMD B450, Memoria interna máxima: 128 GB, Tipo de memoria: DDR4-SDRAM",
+        "brand": "Gigabyte",
+        "category": "Tarjeta Madre",
+        "createdAt": "2020-11-18T14:26:02.834Z",
+        "updatedAt": "2020-11-20T16:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec27",
+        "price": 1200,
+        "inStock": 32,
+        "full_name": "Tarjeta Madre ASUS micro ATX MB PRIME A320M-K, S-AM4, AMD A320, HDMI, 32GB DDR4 para AMD",
+        "image": "https://www.cyberpuerta.mx/img/product/XL/CP-ASUS-90MB0TV0-M0AAY0-1.jpg",
+        "description": "Familia de procesador: AMD, Circuito integrado de tarjeta madre: AMD A320, Socket de procesador: Socket AM4, Circuito integrado: AMD A320,Memoria interna máxima: 32 GB, Tipo de memoria: DDR4-SDRAM",
+        "brand": "ASUS",
+        "category": "Tarjeta Madre",
+        "createdAt": "2020-06-03T16:26:02.834Z",
+        "updatedAt": "2020-06-08T19:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec28",
+        "price": 2379,
+        "inStock": 120,
+        "full_name": "Procesador AMD Ryzen 3 3200G con Gráficos Radeon Vega 8, S-AM4, 3.60GHz, Quad-Core, 4MB L3, con Disipador Wraith Stealth",
+        "image": "https://www.cyberpuerta.mx/img/product/XL/CP-AMD-YD3200C5FHBOX-1.jpg",
+        "description": "Familia de procesador: AMD Ryzen 3, Modelo del procesador: 3200G, Frecuencia del procesador: 3.6 GHz, Socket de procesador: Socket AM4, Número de núcleos: 4",
+        "brand": "Ryzen",
+        "category": "Procesador",
+        "createdAt": "2020-10-18T13:26:02.834Z",
+        "updatedAt": "2020-10-20T18:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec29",
+        "price": 749,
+        "inStock": 15,
+        "full_name": "Mouse Gamer Logitech G600 Láser, Alámbrico, USB, 8200DPI, Negro",
+        "image": "https://www.cyberpuerta.mx/img/product/XL/CP-LOGITECH-910-003879-1.jpg",
+        "description": "Tecnología: Laser, Resolución de movimiento : 8200 DPI, Tecnología de conectividad: Alámbrico, Longitud de cable: 2 m, Cantidad de botones: 20, Color del producto: Negro",
+        "brand": "Logitech",
+        "category": "Mouse",
+        "createdAt": "2020-01-18T14:26:02.834Z",
+        "updatedAt": "2020-01-24T19:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec30",
+        "price": 2029,
+        "inStock": 1,
+        "full_name": "Mouse Logitech Óptico G502 Hero Lightspeed, Inalámbrico, USB, 16000DPI, Negro",
+        "image": "https://www.cyberpuerta.mx/img/product/XL/CP-LOGITECH-910-005566-1.jpg",
+        "description": "Tecnología: Óptico, Resolución de movimiento : 16000 DPI, Tecnología de conectividad: Inalámbrico, Cantidad de botones: 11, Color del producto: Negro",
+        "brand": "Logitech",
+        "category": "Mouse",
+        "createdAt": "2020-11-18T14:26:02.834Z",
+        "updatedAt": "2020-11-20T16:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec31",
+        "price": 1009,
+        "inStock": 0,
+        "full_name": "Memoria RAM XPG SPECTRIX D60G DDR4, 3200MHz, 8GB, Non-ECC, CL16, XMP",
+        "image": "https://www.cyberpuerta.mx/img/product/XL/CP-XPG-AX4U320038G16A-ST60-1.jpg",
+        "description": "Tipo de memoria interna: DDR4, Memoria interna: 8 GB, Diseño de memoria: 1 x 8 GB, Velocidad de memoria del reloj: 3200 MHz, Latencia CAS: 16",
+        "brand": "XPG",
+        "category": "RAM",
+        "createdAt": "2020-05-18T14:26:02.834Z",
+        "updatedAt": "2020-05-24T20:26:02.304Z"
+    },
+    {
+        "_id": "5faf866af74d3104bc3cec32",
+        "price": 899,
+        "inStock": 22,
+        "full_name": "Memoria RAM HyperX FURY Black DDR4, 3200MHz, 8GB, Non-ECC, CL16, XMP",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
+        "description": "Tipo de memoria interna: DDR4, Memoria interna: 8 GB, Diseño de memoria: 1 x 8 GB, Velocidad de memoria del reloj: 3200 MHz, Latencia CAS: 16",
+        "brand": "HyperX",
+        "category": "RAM",
+        "createdAt": "2021-02-18T14:26:02.834Z",
+        "updatedAt": "2020-02-27T20:26:02.304Z"
+    }
+]
