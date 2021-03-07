@@ -88,5 +88,95 @@
         "password": "origami@1989",
         "createdAt": "2020-09-18T21:26:02.834Z",
         "updatedAt": "2020-09-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51j",
+        "isAdmin": false,
+        "full_name": "Ted Mosby",
+        "email": "teddy@gmail.com",
+        "password": "tmosby1",
+        "createdAt": "2020-08-18T21:26:02.834Z",
+        "updatedAt": "2020-08-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51k",
+        "isAdmin": false,
+        "full_name": "Marshall Eriksen",
+        "email": "marsh@gmail.com",
+        "password": "marshlily",
+        "createdAt": "2020-02-18T21:26:02.834Z",
+        "updatedAt": "2020-02-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51l",
+        "isAdmin": false,
+        "full_name": "Lily Aldrin",
+        "email": "Lilypad@gmail.com",
+        "password": "lily2000",
+        "createdAt": "2020-03-18T21:26:02.834Z",
+        "updatedAt": "2020-03-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51m",
+        "isAdmin": false,
+        "full_name": "Robin Sherbatsky",
+        "email": "robin@gmail.com",
+        "password": "rob_sher",
+        "createdAt": "2020-01-18T21:26:02.834Z",
+        "updatedAt": "2020-01-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51n",
+        "isAdmin": false,
+        "full_name": "Bartney Stinson",
+        "email": "suit_up@gmail.com",
+        "password": "playbookgame",
+        "createdAt": "2020-09-18T21:26:02.834Z",
+        "updatedAt": "2020-09-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51o",
+        "isAdmin": false,
+        "full_name": "Ryan Atwood",
+        "email": "Ryan_Chino@gmail.com",
+        "password": "atwood2000!",
+        "createdAt": "2020-01-18T21:26:02.834Z",
+        "updatedAt": "2020-01-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51p",
+        "isAdmin": false,
+        "full_name": "Marissa Copper",
+        "email": "marissa13442@gmail.com",
+        "password": "m4riss42004",
+        "createdAt": "2020-04-18T21:26:02.834Z",
+        "updatedAt": "2020-04-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51q",
+        "isAdmin": false,
+        "full_name": "Seth Cohen",
+        "email": "comics2000@gmail.com",
+        "password": "summer_mil<3",
+        "createdAt": "2020-10-18T21:26:02.834Z",
+        "updatedAt": "2020-10-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51r",
+        "isAdmin": false,
+        "full_name": "Summer Roberts",
+        "email": "summercool@gmail.com",
+        "password": "coolest@22",
+        "createdAt": "2020-07-18T21:26:02.834Z",
+        "updatedAt": "2020-07-20T21:26:02.304Z"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f51s",
+        "isAdmin": false,
+        "full_name": "Sandy Cohen",
+        "email": "sandy_cohen_70@gmail.com",
+        "password": "kirsteen&&",
+        "createdAt": "2020-09-18T21:26:02.834Z",
+        "updatedAt": "2020-09-20T21:26:02.304Z"
     }
 ]
