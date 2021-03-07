@@ -1,0 +1,275 @@
+[
+    {
+        "user": "5d713995b721c3bb38c1f51b",
+        "orderItems": [
+            "5faf866af74d3104bc3cec30", "5faf866af74d3104bc3cec31"
+        ],
+        "shippingAddress": {
+            "address": "Av. Nuevo Milenio #45",
+            "city": "Morelia",
+            "postalCode": 53502,
+            "country": "Michoacan"
+        },
+        "paymentMethod": null,
+        "totalPrice": 3000,
+        "shippingPrice": 100,
+        "isPaid": false,
+        "isPaidAt": null,
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-11-18T21:26:02.834Z",
+        "updatedAt": "2020-11-18T23:34:31.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51d",
+        "orderItems": [
+            "5faf866af74d3104bc3cec32"
+        ],
+        "shippingAddress": {
+            "address": "Morelos #45",
+            "city": "Zapopan",
+            "postalCode": 10502,
+            "country": "Jalisco"
+        },
+        "paymentMethod": "Paypal",
+        "totalPrice": 1000,
+        "shippingPrice": 100,
+        "isPaid": true,
+        "isPaidAt":"2020-11-20T21:26:02.834Z",
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-11-18T21:26:02.834Z",
+        "updatedAt": "2020-11-20T21:26:02.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51g",
+        "orderItems": [
+            "5faf866af74d3104bc3cec31", "5faf866af74d3104bc3cec32", "5faf866af74d3104bc3cec28"
+        ],
+        "shippingAddress": {
+            "address": "Monte Vento #125",
+            "city": "Celaya",
+            "postalCode": 10502,
+            "country": "Guanajuato"
+        },
+        "paymentMethod": "Master Card",
+        "totalPrice": 5000,
+        "shippingPrice": 150,
+        "isPaid": true,
+        "isPaidAt":"2020-12-20T22:26:02.834Z",
+        "isDelivered": true,
+        "isDeliveredAt": "2020-12-28T19:26:02.834Z",
+        "createdAt": "2020-11-18T21:26:02.834Z",
+        "updatedAt": "2020-11-20T21:26:02.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51c",
+        "orderItems": [
+            "5faf866af74d3104bc3cec31", "5faf866af74d3104bc3cec26", "5faf866af74d3104bc3cec25"
+        ],
+        "shippingAddress": {
+            "address": "Ramirez Ayala #1090",
+            "city": "Culiacán",
+            "postalCode": 19202,
+            "country": "Sinaloa"
+        },
+        "paymentMethod": null,
+        "totalPrice": 3000,
+        "shippingPrice": 100,
+        "isPaid": false,
+        "isPaidAt": null,
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-01-18T21:26:02.834Z",
+        "updatedAt": "2020-01-18T23:34:31.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51h",
+        "orderItems": [
+            "5faf866af74d3104bc3cec30"
+        ],
+        "shippingAddress": {
+            "address": "Arquimedes #504",
+            "city": "Mazatlán",
+            "postalCode": 33502,
+            "country": "Sonora"
+        },
+        "paymentMethod": "Paypal",
+        "totalPrice": 2450,
+        "shippingPrice": 120,
+        "isPaid": true,
+        "isPaidAt":"2020-11-20T23:26:02.834Z",
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-11-18T21:26:02.834Z",
+        "updatedAt": "2020-11-20T23:26:02.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51c",
+        "orderItems": [
+            "5faf866af74d3104bc3cec31", "5faf866af74d3104bc3cec26", "5faf866af74d3104bc3cec25"
+        ],
+        "shippingAddress": {
+            "address": "Ramirez Ayala #1090",
+            "city": "Culiacán",
+            "postalCode": 19202,
+            "country": "Sinaloa"
+        },
+        "paymentMethod": null,
+        "totalPrice": 3000,
+        "shippingPrice": 100,
+        "isPaid": false,
+        "isPaidAt": null,
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-01-18T21:26:02.834Z",
+        "updatedAt": "2020-01-18T23:34:31.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51h",
+        "orderItems": [
+            "5faf866af74d3104bc3cec30"
+        ],
+        "shippingAddress": {
+            "address": "Arquimedes #504",
+            "city": "Mazatlán",
+            "postalCode": 33502,
+            "country": "Sonora"
+        },
+        "paymentMethod": "Paypal",
+        "totalPrice": 2450,
+        "shippingPrice": 120,
+        "isPaid": true,
+        "isPaidAt":"2020-11-20T23:26:02.834Z",
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-11-18T21:26:02.834Z",
+        "updatedAt": "2020-11-20T23:26:02.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51c",
+        "orderItems": [
+            "5faf866af74d3104bc3cec31", "5faf866af74d3104bc3cec26", "5faf866af74d3104bc3cec25"
+        ],
+        "shippingAddress": {
+            "address": "Ramirez Ayala #1090",
+            "city": "Culiacán",
+            "postalCode": 19202,
+            "country": "Sinaloa"
+        },
+        "paymentMethod": null,
+        "totalPrice": 3000,
+        "shippingPrice": 100,
+        "isPaid": false,
+        "isPaidAt": null,
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-01-18T21:26:02.834Z",
+        "updatedAt": "2020-01-18T23:34:31.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51m",
+        "orderItems": [
+            "5faf866af74d3104bc3cec29", "5faf866af74d3104bc3cec25"
+        ],
+        "shippingAddress": {
+            "address": "100 Queen Street West",
+            "city": "Toronto",
+            "postalCode": 5222,
+            "country": "Canada"
+        },
+        "paymentMethod": "Paypal",
+        "totalPrice": 6749,
+        "shippingPrice": 1000,
+        "isPaid": true,
+        "isPaidAt":"2020-10-20T23:26:02.834Z",
+        "isDelivered": true,
+        "isDeliveredAt": "2020-10-18T21:26:02.834Z",
+        "createdAt": "2020-10-18T21:26:02.834Z",
+        "updatedAt": "2020-10-20T23:26:02.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51s",
+        "orderItems": [
+            "5faf866af74d3104bc3cec23", "5faf866af74d3104bc3cec24", "5faf866af74d3104bc3cec25"
+        ],
+        "shippingAddress": {
+            "address": "Newport beach",
+            "city": "California",
+            "postalCode": 92657,
+            "country": "Estados Unidos"
+        },
+        "paymentMethod": "VISA",
+        "totalPrice": 12500,
+        "shippingPrice": 600,
+        "isPaid": false,
+        "isPaidAt": null,
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-02-18T21:26:02.834Z",
+        "updatedAt": "2020-02-18T23:34:31.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51n",
+        "orderItems": [
+            "5faf866af74d3104bc3cec32"
+        ],
+        "shippingAddress": {
+            "address": "240 W 55th St",
+            "city": "New york",
+            "postalCode": 10019,
+            "country": "Estados Unidos"
+        },
+        "paymentMethod": "VISA",
+        "totalPrice": 899,
+        "shippingPrice": 300,
+        "isPaid": true,
+        "isPaidAt":"2020-12-20T23:26:02.834Z",
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-12-18T21:26:02.834Z",
+        "updatedAt": "2020-12-20T23:26:02.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51g",
+        "orderItems": [
+            "5faf866af74d3104bc3cec33" , "5faf866af74d3104bc3cec37"
+        ],
+        "shippingAddress": {
+            "address": "Ramos Millan # 22",
+            "city": "Guadalajara",
+            "postalCode": 44160,
+            "country": "Jalisco"
+        },
+        "paymentMethod": "Paypal",
+        "totalPrice": 3374.99,
+        "shippingPrice": 260,
+        "isPaid": true,
+        "isPaidAt":"2020-12-23T20:16:22.834Z",
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-11-28T11:16:19.834Z",
+        "updatedAt": "2020-11-29T13:46:22.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51i",
+        "orderItems": [
+            "5faf866af74d3104bc3cec40"
+        ],
+        "shippingAddress": {
+            "address": "AGUSTIN MELGAR 2328",
+            "city": "Nuevo León",
+            "postalCode": 64550,
+            "country": "Monterrey"
+        },
+        "paymentMethod": "Paypal",
+        "totalPrice": 869.99,
+        "shippingPrice": 320,
+        "isPaid": true,
+        "isPaidAt":"2020-12-23T20:16:22.834Z",
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-09-12T10:26:42.834Z",
+        "updatedAt": "2020-09-13T09:43:44.304Z"
+    }
+]
