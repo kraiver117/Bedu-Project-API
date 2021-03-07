@@ -132,7 +132,7 @@
         "updatedAt": "2020-12-02T22:59:02.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec33",
+        "_id": "5faf866af74d3104bc3cec34",
         "price": 775.99,
         "inStock": 3,
         "full_name": "Vorago EN-385893-1 Fuente de Poder Game Factor, 400 Watts",
@@ -144,7 +144,7 @@
         "updatedAt": "2020-12-02T22:01:43.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec34",
+        "_id": "5faf866af74d3104bc3cec35",
         "price": 499,
         "inStock": 16,
         "full_name": "Acteck ES-05002 Fuente de Poder Micro Atx 500 W Molex Ventilador 80Mm para Gabinete Slim Modelo S-500, Negro",
@@ -156,7 +156,7 @@
         "updatedAt": "2020-12-20T13:42:16.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec35",
+        "_id": "5faf866af74d3104bc3cec36",
         "price": 627.99,
         "inStock": 22,
         "full_name": "Microsoft LifeCam HD-3000 for Business",
@@ -168,7 +168,7 @@
         "updatedAt": "2020-02-02T13:11:28.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec36",
+        "_id": "5faf866af74d3104bc3cec37",
         "price": 2099.99,
         "inStock": 12,
         "full_name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
@@ -180,7 +180,7 @@
         "updatedAt": "2020-06-26T12:10:29.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec37",
+        "_id": "5faf866af74d3104bc3cec38",
         "price": 2599,
         "inStock": 2,
         "full_name": "Zotac GeForce GT 730 Zone Edition 4GB DDR3 PCI Express 2.0 x16 (x8 Lanes) Graphics Card (ZT-71115-20L)",
@@ -192,7 +192,7 @@
         "updatedAt": "2020-12-06T18:31:36.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec38",
+        "_id": "5faf866af74d3104bc3cec39",
         "price": 1509.99,
         "inStock": 6,
         "full_name": "ADATA Disco Duro Externo HDD HD710P",
@@ -204,7 +204,7 @@
         "updatedAt": "2020-04-06T19:36:16.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec39",
+        "_id": "5faf866af74d3104bc3cec40",
         "price": 789.99,
         "inStock": 30,
         "full_name": "Teclado Gamer Game Factor KBG500 RGB, Teclado Mecánico, Switch KRED Red, Alámbrico, Negro (Español)",
@@ -216,7 +216,7 @@
         "updatedAt": "2020-10-19T20:12:23.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec40",
+        "_id": "5faf866af74d3104bc3cec41",
         "price": 869.99,
         "inStock": 26,
         "full_name": "Teclado Gamer Logitech G213 Prodigy LED RGB, Alámbrico, Negro, (Inglés)",
@@ -228,7 +228,7 @@
         "updatedAt": "2020-08-26T11:34:03.304Z"
     },
     {
-        "_id": "5faf866af74d3104bc3cec41",
+        "_id": "5faf866af74d3104bc3cec42",
         "price": 1509.99,
         "inStock": 16,
         "full_name": "Monitor HP N246v LED 23.8'', Full HD, Widescreen, HDMI, Negro",
