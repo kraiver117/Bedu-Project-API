@@ -229,5 +229,47 @@
         "isDeliveredAt": null,
         "createdAt": "2020-12-18T21:26:02.834Z",
         "updatedAt": "2020-12-20T23:26:02.304Z"
+    },
+    {
+        "user": "5d713995b721c3bb38c1f51g",
+           "orderItems": [
+               "5faf866af74d3104bc3cec33" , "5faf866af74d3104bc3cec37"
+           ],
+        "shippingAddress": {
+            "address": "Ramos Millan # 22",
+            "city": "Guadalajara",
+            "postalCode": 44160,
+            "country": "Jalisco"
+        },
+        "paymentMethod": "Paypal",
+        "totalPrice": 3374.99,
+        "shippingPrice": 260,
+        "isPaid": true,
+        "isPaidAt":"2020-12-23T20:16:22.834Z",
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-11-28T11:16:19.834Z",
+        "updatedAt": "2020-11-29T13:46:22.304Z"
+    },
+       {
+        "user": "5d713995b721c3bb38c1f51i",
+        "orderItems": [
+            "5faf866af74d3104bc3cec40"
+        ],
+        "shippingAddress": {
+            "address": "AGUSTIN MELGAR 2328",
+            "city": "Nuevo León",
+            "postalCode": 64550,
+            "country": "Monterrey"
+        },
+        "paymentMethod": "Paypal",
+        "totalPrice": 869.99,
+        "shippingPrice": 320,
+        "isPaid": true,
+        "isPaidAt":"2020-12-23T20:16:22.834Z",
+        "isDelivered": false,
+        "isDeliveredAt": null,
+        "createdAt": "2020-09-12T10:26:42.834Z",
+        "updatedAt": "2020-09-13T09:43:44.304Z"
     }
 ]
