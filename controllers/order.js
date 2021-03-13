@@ -1,36 +1,27 @@
 const Order = require("../models/Order");
 const Product = require("../models/Product");
+const asyncHandler = require('../middleware/async');
 
-exports.createOrder = async (req, res) =>  {
-  try {
-    // const { OrderItems } = req.body;
+// @desc      Create order
+// @route     POST /v1/orders
+// @access    Private/public
+exports.createOrder = asyncHandler(async (req, res) =>  {
 
-    // const product = await Product.findById(OrderItems);
-    const order = new Order(req.body);
+    const order = await Order.create(req.body);
     order.user = req.user.id;
-    order.save();
 
     res.status(201).json({
       success: true,
       data: order
     });
+})
 
-  } catch (error) {
-    console.log(error);
-    res.status(500).send('Error en la orden')
-  }
-}
-
-exports.getOrders = async (req, res) => {
-  
-  try {
-    const orders = await Order.find({user: req.user.id});
-    res.json({orders});
-  } catch (error) {
-    console.log(error);
-    res.status(500).send('Error al obtener ordenes')
-  }
-}
+// @desc      Get order
+// @route     GET /v1/orders
+// @access    Private/public
+exports.getOrders = asyncHandler(async (req, res) => {
+    res.status(200).json(res.advancedResults);
+});
 
 
 // function updateOrder(req, res) {
