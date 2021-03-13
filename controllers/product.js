@@ -1,30 +1,68 @@
-const Product = require("../models/Order");
+const Product = require('../models/Product');
+const ErrorResponse = require('../utils/errorResponse');
+const asyncHandler = require('../middleware/async');
 
-function createProduct(req, res) {
-  const product = new Product(req.body);
-  res.status(201).send(product);
-}
+// @desc    Get all products
+//@route    GET /v1/products
+//@access   Public
+exports.getAllProducts = asyncHandler(async (req, res, next) => {
+  res.status(200).json(res.advancedResults);
+});
 
-function updateProduct(req, res) {
-  var product1 = new Product(Number(req.params.id), "Monitor Gaming", "Lenovo", "21.5 pulgadas", "Monitor", 1000, 5, "37786487t3.jpg", "28/02/2021", "28/02/2021");
-  var modificaciones = req.body;
-  product1 = { ...product1, ...modificaciones };
-  res.send(product1);
-}
+// @desc    Get single product
+//@route    GET /v1/products/:id
+//@access   Public
+exports.getProductById = asyncHandler(async (req, res, next) => {
+  const product = await Product.findById(req.params.id);
+  if (!product) {
+    return next(new ErrorResponse('El producto no existe', 404));
+  }
 
-function getProducts(req, res) {
-  var product1 = new Product(1, "Monitor Gaming", "Lenovo", "21.5 pulgadas", "Monitor", 1000, 5, "37786487t3.jpg", "28/02/2021", "28/02/2021");
-  var product2 = new Product(2, "MOUSE GAMER", "REDlemon", "Mouse  Óptico De 7200 Dpi", "Mouse", 210, 15, "23768763478.jpg", "28/02/2021", "28/02/2021");
-  res.send([product1, product2]);
-}
+  res.status(200).json({
+    success: true,
+    data: product
+  });
+});
 
-function deleteProduct(req, res) {
-  res.status(200).send(`Producto ${req.params.id} eliminado`);
-}
+// @desc      Create product
+// @route     POST /v1/products
+// @access    Private/Admin
+exports.createProduct = asyncHandler(async (req, res, next) => {
+  const product = await Product.create(req.body);
 
-module.exports = {
-    createProduct,
-    updateProduct,
-    getProducts,
-    deleteProduct
-}
+  res.status(201).json({
+    success: true,
+    data: product
+  });
+});
+
+
+// @desc    Update product
+//@route    PUT /v1/products/:id
+//@access   Private/Admin
+exports.updateProduct = asyncHandler(async (req, res, next) => {
+  const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true
+  });
+
+  await product.save();
+
+  res.status(200).json({
+    success: true,
+    data: product
+  });
+});
+
+
+// @desc    Delete product
+//@route    DELETE /v1/products/:id
+//@access   Private/Admin
+exports.deleteProduct = asyncHandler(async (req, res, next) => {
+  const product = await Product.findOneAndDelete({ _id: req.params.id });
+
+  res.status(200).json({
+    success: true,
+    data: product
+  });
+});
