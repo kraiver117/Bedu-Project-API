@@ -6,8 +6,10 @@ const OrderSchema = new mongoose.Schema({
         ref: 'User'
     },
     OrderItems: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Product'
+        type: String,
+        default: 'Item 5'
+        // type: mongoose.Schema.Types.ObjectId,
+        // ref: 'Product'
     },
     address: {
         type: String,
