@@ -1,15 +1,22 @@
 const express = require('express');
 const router = express.Router();
 const {
+   getAllProducts,
+   getProductById,
    createProduct,
    updateProduct,
-   getProducts,
    deleteProduct
 } = require('../controllers/product');
 
-router.post('/', createProduct);
-router.get('/', getProducts);
-router.put('/:id', updateProduct);
-router.delete('/:id', deleteProduct);
+const Product = require('../models/Product');
+
+const advancedQueryResults = require('../middleware/advancedQueryResults');
+const { protect, authorize } = require('../middleware/auth');
+
+router.get('/', advancedQueryResults(Product), getAllProducts);
+router.get('/:id', getProductById);
+router.post('/', protect, authorize('admin'), createProduct);
+router.put('/:id', protect, authorize('admin'), updateProduct);
+router.delete('/:id', protect, authorize('admin'), deleteProduct);
 
 module.exports = router;
