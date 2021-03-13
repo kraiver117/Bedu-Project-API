@@ -1,62 +1,47 @@
 const mongoose = require('mongoose');
 //const bcrypt = require('bcryptjs');
 //const jwt = require('jsonwebtoken');
-const uniqueValidator = require("mongoose-unique-validator");
+// const uniqueValidator = require("mongoose-unique-validator");
 
 const OrderSchema = new mongoose.Schema({
     user: {
-        type: String,
-        unique: true,
-        lowercase: true,
-        required: [true, "no puede estar vacío"],
-        index = true,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     },
-    OrderItems: {
+    orderItems: {
         type: String,
-        required: [true, "no puede estar vacío"],
-
+        // required: [true, "Agregue un producto"],
+        // type: mongoose.Schema.Types.ObjectId,
+        // ref: 'Product'
     },
-    ShippingAddress: {
+    shippingAddress: {
         type: String,
-        required: [true, "no puede estar vacío"], 
+        required: [true, "Ingrese su direccion"], 
     },
     paymentMethod: {
-        required: [true, "no puede estar vacío"],
+        type:String,
+        required: [true, "Ingrese un metodo de pago"],
     },
-    totalPrice: { Number },
-    shippingPrice: { Number },
-    isPaid: { Boolean },
+    totalPrice: { 
+        type: Boolean
+     },
+    shippingPrice: { 
+        type: Number
+     },
+    isPaid: { 
+        type: Number
+     },
     paidAt: {
-        //
+        type: Date,
+        default: Date.now()
     },
-    isDelivered: { Boolean },
+    isDelivered: { 
+        type: Date,
+        default: Date.now()
+     },
     deliveredAt: {
-        //
-    },
-    createdAt: {
-        //timestamps
-    },
-    updatedAt: {
-        //timestamps
+        type: Date,
     },
 }, { timestamps: true });
 
 module.exports = mongoose.model("Orders", OrderSchema);
-
-
-OrderSchema.methods.publicData = function(){
-    return{
-        User = this.User,
-        OrderItems = this.OrderItems,
-        ShippingAddress = this.ShippingAddress,
-        paymentMethod = this.paymentMethod,
-        totalPrice = this.totalPrice,
-        shippingPrice = this.shippingPrice,
-        isPaid = this.isPaid,
-        paidAt = this.paidAt,
-        isDelivered = this.isDelivered,
-        deliveredAt = this.deliveredAt,
-        createdAt = this.createdAt,
-        updatedAt = this.updatedAt,
-    };
-};
