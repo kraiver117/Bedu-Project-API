@@ -1,23 +1,54 @@
-class User {
-    constructor(id, full_name, email, password, isAdmin, createdAt, updatedAt) {
-        this.id = id;
-        this.full_name = full_name;
-        this.email = email;
-        this.password = password;
-        this.isAdmin = isAdmin;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+
+const UserSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: [true, 'Ingresa un nombre']
+    },
+    email: {
+        type: String,
+        required: [true, 'Ingresa un email'],
+        unique: true,
+        match: [
+            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+            'Ingresa un email valido'
+        ]
+    },
+    role: {
+        type: String,
+        enum: ['user', 'admin'],
+        default: 'user'
+    },
+    password: {
+        type: String,
+        required: [true, 'Ingresa una contraseña'],
+        minlength: 6,
+        select: false
+    }
+}, { timestamps: true });
+
+//Encrypt password using bcryptjs
+UserSchema.pre('save', async function (next) {
+    if (!this.isModified('password')) {
+        next();
     }
 
-    getUsers() {}
+    const salt = await bcrypt.genSalt(10);
+    this.password = await bcrypt.hash(this.password, salt);
+});
 
-    getUserById() {}
+//Sign JWT and return
+UserSchema.methods.getSignedJwtToken = function () {
+    return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
+        expiresIn: process.env.JWT_EXPIRE
+    });
+};
 
-    createUser() {}
+//Match user entered password to hashed password in database
+UserSchema.methods.matchPassword = async function (enteredPassword) {
+    return await bcrypt.compare(enteredPassword, this.password);
+};
 
-    updateUser() {}
-
-    deleteUser() {}
-}
-
-module.exports = User
+module.exports = mongoose.model('User', UserSchema);

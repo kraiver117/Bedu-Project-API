@@ -1,31 +1,67 @@
-const User = require("../models/User");
+const User = require('../models/User');
+const ErrorResponse = require('../utils/errorResponse');
+const asyncHandler = require('../middleware/async');
 
-function createUser(req, res) {
-  const user = new User(req.body);
-  console.log(user);
-  res.status(201).send(user);
-}
+// @desc    Get all users
+//@route    GET /v1/users
+//@access   Private/Admin
+exports.getAllUsers = asyncHandler(async (req, res, next) => {
+  res.status(200).json(res.advancedResults);
+});
 
-function updateUser(req, res) {
-  var user1 = new User(Number(req.params.id), "Juan Perez", "juanperez@gmail.com", "juan1234", false, "28/02/2021", "28/02/2021");
-  var modificaciones = req.body;
-  user1 = { ...user1, ...modificaciones };
-  res.send(user1);
-}
+// @desc    Get single user
+//@route    GET /v1/users/:id
+//@access   Private/Admin
+exports.getUserById = asyncHandler(async (req, res, next) => {
+  const user = await User.findById(req.params.id);
 
-function getUsers(req, res) {
-  var user1 = new User(1, "Juan Perez", "juanperez@gmail.com", "juan1234", false, "28/02/2021", "28/02/2021");
-  var user2 = new User(2, "Rodrigo Ruíz", "rodruiz@gmail.com", "rod1234", false, "28/02/2021", "28/02/2021");
-  res.send([user1, user2]);
-}
+  if (!user) {
+    return next(new ErrorResponse('El usuario no existe', 404));
+  }
 
-function deleteUser(req, res) {
-  res.status(200).send(`Usuario ${req.params.id} eliminado`);
-}
+  res.status(200).json({
+    success: true,
+    data: user
+  });
+});
 
-module.exports = {
-  createUser,
-  updateUser,
-  getUsers,
-  deleteUser,
-};
+// @desc      Create user
+// @route     POST /v1/users
+// @access    Private/Admin
+exports.createUser = asyncHandler(async (req, res, next) => {
+  const user = await User.create(req.body);
+
+  res.status(201).json({
+    success: true,
+    data: user
+  });
+});
+
+// @desc    Update user
+//@route    PUT /v1/users/:id
+//@access   Private/Admin
+exports.updateUser = asyncHandler(async (req, res, next) => {
+  const user = await User.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true
+  });
+
+  await user.save();
+
+  res.status(200).json({
+    success: true,
+    data: user
+  });
+});
+
+// @desc    Delete user
+//@route    PUT /v1/users/:id
+//@access   Private/Admin
+exports.deleteUser = asyncHandler(async (req, res, next) => {
+  const user = await User.findOneAndDelete({ _id: req.user.id });
+
+  res.status(200).json({
+    success: true,
+    data: user
+  });
+});
