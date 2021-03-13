@@ -36,8 +36,8 @@ const OrderSchema = new mongoose.Schema({
         default: Date.now()
     },
     isDelivered: { 
-        type: Date,
-        default: Date.now()
+        type: Boolean,
+        default: false
      },
     deliveredAt: {
         type: Date,

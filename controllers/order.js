@@ -4,21 +4,22 @@ const asyncHandler = require('../middleware/async');
 
 // @desc      Create order
 // @route     POST /v1/orders
-// @access    Private/public
-exports.createOrder = asyncHandler(async (req, res) =>  {
+// @access    public
+exports.createOrder = (req, res) =>  {
 
-    const order = await Order.create(req.body);
+    const order = new Order(req.body)
     order.user = req.user.id;
 
+    order.save();
     res.status(201).json({
       success: true,
       data: order
     });
-})
+}
 
 // @desc      Get order
 // @route     GET /v1/orders
-// @access    Private/public
+// @access    public
 exports.getOrders = asyncHandler(async (req, res) => {
     res.status(200).json(res.advancedResults);
 });
