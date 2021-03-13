@@ -3,18 +3,21 @@ const mongoose = require('mongoose');
 const ProductSchema = new mongoose.Schema({
     fullName: {
         type: String,
-        required: [true, 'Ingresa un nombre']
+        required: [true, 'Ingresa un nombre'],
+        trim:true
     },
     brand: {
         type: String,
-        required: [true, 'Ingresa una Marca']
+        required: [true, 'Ingresa una Marca'],
+        trim:true
     },
     description: {
         type: String,
     },
     category: {
         type: String,
-        default: 'General'
+        default: 'General',
+        trim:true
     },
     price: {
         type: Number,
@@ -25,7 +28,8 @@ const ProductSchema = new mongoose.Schema({
         default: 0
     },
     image: {
-        type: String
+        type: String,
+        default: 'https://i.ibb.co/Jv17Vfy/default.jpg'
     }
 }, { timestamps: true });
 

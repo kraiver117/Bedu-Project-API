@@ -2,7 +2,7 @@ const Product = require('../models/Product');
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/async');
 
-// @desc    Get all product
+// @desc    Get all products
 //@route    GET /v1/products
 //@access   Public
 exports.getAllProducts = asyncHandler(async (req, res, next) => {
