@@ -26,6 +26,9 @@ const orders = JSON.parse(fs.readFileSync(`${__dirname}/_data/orders.json`, 'utf
 // Import into DB
 const importData = async () => {
     try {
+        //Delete Data before created in order to avoid errors con CLI
+        await User.deleteMany();
+
         await User.create(users);
 
         console.log('Data imported'.green.inverse);
