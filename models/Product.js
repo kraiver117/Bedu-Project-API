@@ -1,32 +1,32 @@
-class Product{
-    constructor(id, full_Name, brand, description, category, price, inStock, image, createdAt, updatedAt){
-        this.id = id;
-        this.full_Name = full_Name; 
-        this.brand = brand; 
-        this.description = description; 
-        this.category = category; 
-        this.price = price; 
-        this.inStock = inStock; 
-        this.image = image;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
+const mongoose = require('mongoose');
+
+const ProductSchema = new mongoose.Schema({
+    fullName: {
+        type: String,
+        required: [true, 'Ingresa un nombre']
+    },
+    brand: {
+        type: String,
+        required: [true, 'Ingresa una Marca']
+    },
+    description: {
+        type: String,
+    },
+    category: {
+        type: String,
+        default: 'General'
+    },
+    price: {
+        type: Number,
+        default: 0.00
+    },
+    inStock: {
+        type: Number,
+        default: 0
+    },
+    image: {
+        type: String
     }
+}, { timestamps: true });
 
-    createProduct(){
-
-    }
-
-    getProducts(){
-
-    }
-
-    updateProduct(){
-
-    }
-
-    deleteProduct(){
-
-    }
-}
-
-module.exports = Product;
+module.exports = mongoose.model('Product', ProductSchema);
