@@ -4,7 +4,8 @@ const ProductSchema = new mongoose.Schema({
     fullName: {
         type: String,
         required: [true, 'Ingresa un nombre'],
-        trim:true
+        trim:true,
+        unique: true
     },
     brand: {
         type: String,
@@ -13,6 +14,7 @@ const ProductSchema = new mongoose.Schema({
     },
     description: {
         type: String,
+        trim:true
     },
     category: {
         type: String,
