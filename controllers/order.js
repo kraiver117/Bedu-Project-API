@@ -25,6 +25,20 @@ function getOrders(req, res) {
   res.send([order1, order2]);
 }
 
+function getOrderbyID(req, res){
+var orderID = req.params.id;
+
+Order.findById(orderID).exec((err, nota) => {
+  if(err) return res.status(500).send({ message: "Error en el servidor" });
+      if(Order){
+          return res.status(200).send({ Order });
+      }else{
+          return res.status(404).send({ message: "No existe la orden" });
+      }
+   
+});
+}
+
 function deleteOrder(req, res) {
   res.status(200).send(`Orden ${req.params.id} eliminada`);
 }
@@ -33,5 +47,6 @@ module.exports = {
   createOrder,
   updateOrder,
   getOrders,
+  getOrderbyID,
   deleteOrder
 }
