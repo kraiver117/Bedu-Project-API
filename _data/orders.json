@@ -2,18 +2,31 @@
     {
         "user": "5d713995b721c3bb38c1f511",
         "orderItems": [
-            "5faf866af74d3104bc3ce123", "5faf866af74d3104bc3cec124", "5faf866af74d3104bc3ce130"
+            {
+                "product":"5faf866af74d3104bc3ce123",
+                "name": "Monitor ASUS VG279QR",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
+                "price": 4000,
+                "qty": 2
+            },
+            {
+                "product":"5faf866af74d3104bc3ce127",
+                "name": "Tarjeta Madre ASUS micro ATX MB PRIME A320M-K, S-AM4, AMD A320, HDMI, 32GB DDR4 para AMD",
+                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-ASUS-90MB0TV0-M0AAY0-1.jpg",
+                "price": 1200,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "Av. Nuevo Milenio #45",
             "city": "Morelia",
-            "postalCode": 53502,
+            "postalCode": "53502",
             "country": "Michoacan"
         },
-        "paymentMethod": null,
-        "totalPrice": 3000,
-        "shippingPrice": 100,
-        "isPaid": false,
+        "paymentMethod": "Master Card",
+        "totalPrice": 9350,
+        "shippingPrice": 150,
+        "isPaid": true,
         "isPaidAt": null,
         "isDelivered": false,
         "isDeliveredAt": null,
@@ -23,17 +36,30 @@
     {
         "user": "5d713995b721c3bb38c1f513",
         "orderItems": [
-            "5faf866af74d3104bc3ce131", "5faf866af74d3104bc3ce132", "5faf866af74d3104bc3ce133"
+            {
+                "product":"5faf866af74d3104bc3ce129",
+                "name": "Mouse Gamer Logitech G600 Láser, Alámbrico, USB, 8200DPI, Negro",
+                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-LOGITECH-910-003879-1.jpg",
+                "price": 749,
+                "qty": 1
+            },
+            {
+                "product":"5faf866af74d3104bc3ce135",
+                "name": "Acteck ES-05002 Fuente de Poder Micro Atx 500 W Molex Ventilador 80Mm para Gabinete Slim Modelo S-500, Negro",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/81lqr3XSrjL._AC_SX355_.jpg",
+                "price": 499,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "Morelos #45",
             "city": "Zapopan",
-            "postalCode": 10502,
+            "postalCode": "10502",
             "country": "Jalisco"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 1000,
-        "shippingPrice": 100,
+        "totalPrice": 1448,
+        "shippingPrice": 150,
         "isPaid": true,
         "isPaidAt":"2020-11-20T21:26:02.834Z",
         "isDelivered": false,
@@ -44,7 +70,27 @@
     {
         "user": "5d713995b721c3bb38c1f515",
         "orderItems": [
-            "5faf866af74d3104bc3ce135", "5faf866af74d3104bc3ce136", "5faf866af74d3104bc3ce128"
+            {
+                "product":"5faf866af74d3104bc3ce137",
+                "name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/715fqILF10L._AC_SY355_.jpg",
+                "price": 2599,
+                "qty": 2
+            },
+            {
+                "product":"5faf866af74d3104bc3ce139",
+                "name": "ADATA Disco Duro Externo HDD HD710P",
+                "image": "https://m.media-amazon.com/images/I/81uviPRH86L._AC_SS450_.jpg",
+                "price": 1509.99,
+                "qty": 1
+            },
+            {
+                "product":"5faf866af74d3104bc3ce141",
+                "name": "Teclado Gamer Logitech G213 Prodigy LED RGB, Alámbrico, Negro, (Inglés)",
+                "image": "https://www.cyberpuerta.mx/img/product/L/CP-LOGITECH-920-008084-1.jpg",
+                "price": 869.99,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "Monte Vento #125",
@@ -52,8 +98,8 @@
             "postalCode": 10502,
             "country": "Guanajuato"
         },
-        "paymentMethod": "Master Card",
-        "totalPrice": 5000,
+        "paymentMethod": "VISA",
+        "totalPrice": 7727.98,
         "shippingPrice": 150,
         "isPaid": true,
         "isPaidAt":"2020-12-20T22:26:02.834Z",
@@ -65,19 +111,25 @@
     {
         "user": "5d713995b721c3bb38c1f516",
         "orderItems": [
-            "5faf866af74d3104bc3ce137", "5faf866af74d3104bc3ce131", "5faf866af74d3104bc3ce127"
+            {
+                "product":"5faf866af74d3104bc3ce142",
+                "name": "Monitor HP N246v LED 23.8'', Full HD, Widescreen, HDMI, Negro",
+                "image": "https://www.cyberpuerta.mx/img/product/L/CP-HP-1RM28AA-1.jpg",
+                "price": 1509.99,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "Ramirez Ayala #1090",
             "city": "Culiacán",
-            "postalCode": 19202,
+            "postalCode": "19202",
             "country": "Sinaloa"
         },
-        "paymentMethod": null,
-        "totalPrice": 3000,
-        "shippingPrice": 100,
-        "isPaid": false,
-        "isPaidAt": null,
+        "paymentMethod": "VISA",
+        "totalPrice": 1659.99,
+        "shippingPrice": 150,
+        "isPaid": true,
+        "isPaidAt": "2020-01-18T23:34:31.304Z",
         "isDelivered": false,
         "isDeliveredAt": null,
         "createdAt": "2020-01-18T21:26:02.834Z",
@@ -86,17 +138,30 @@
     {
         "user": "5d713995b721c3bb38c1f521",
         "orderItems": [
-            "5faf866af74d3104bc3ce125"
+            {
+                "product":"5faf866af74d3104bc3ce125",
+                "name": "Monitor Gamer Curvo Samsung LC27F390FHL LED 27'', Full HD, Widescreen, FreeSync, HDMI, Negro",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
+                "price": 6000,
+                "qty": 1
+            },
+            {
+                "product":"5faf866af74d3104bc3ce124",
+                "name": "SSD Kingston A2000 NVMe, 1TB, PCI Express 3.0, M2",
+                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-KINGSTON-SA2000M81000G-1.jpg",
+                "price": 2500,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "Arquimedes #504",
             "city": "Mazatlán",
-            "postalCode": 33502,
+            "postalCode": "33502",
             "country": "Sonora"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 2450,
-        "shippingPrice": 120,
+        "totalPrice": 8650,
+        "shippingPrice": 150,
         "isPaid": true,
         "isPaidAt":"2020-11-20T23:26:02.834Z",
         "isDelivered": false,
@@ -107,19 +172,32 @@
     {
         "user": "5d713995b721c3bb38c1f5d0",
         "orderItems": [
-            "5faf866af74d3104bc3ce127", "5faf866af74d3104bc3ce128", "5faf866af74d3104bc3ce129"
+            {
+                "product":"5faf866af74d3104bc3ce139",
+                "name": "ADATA Disco Duro Externo HDD HD710P",
+                "image": "https://m.media-amazon.com/images/I/81uviPRH86L._AC_SS450_.jpg",
+                "price": 1509.99,
+                "qty": 1
+            },
+            {
+                "product":"5faf866af74d3104bc3ce141",
+                "name": "Teclado Gamer Logitech G213 Prodigy LED RGB, Alámbrico, Negro, (Inglés)",
+                "image": "https://www.cyberpuerta.mx/img/product/L/CP-LOGITECH-920-008084-1.jpg",
+                "price": 869.99,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "Ramirez Ayala #1090",
             "city": "Culiacán",
-            "postalCode": 19202,
+            "postalCode": "19202",
             "country": "Sinaloa"
         },
-        "paymentMethod": null,
-        "totalPrice": 3000,
-        "shippingPrice": 100,
-        "isPaid": false,
-        "isPaidAt": null,
+        "paymentMethod": "Master Card",
+        "totalPrice": 2529.98,
+        "shippingPrice": 150,
+        "isPaid": true,
+        "isPaidAt": "2020-01-18T23:34:31.304Z",
         "isDelivered": false,
         "isDeliveredAt": null,
         "createdAt": "2020-01-18T21:26:02.834Z",
@@ -128,7 +206,13 @@
     {
         "user": "5d713995b721c3bb38c1f524",
         "orderItems": [
-            "5faf866af74d3104bc3ce132", "5faf866af74d3104bc3ce133"
+            {
+                "product":"5faf866af74d3104bc3ce124",
+                "name": "SSD Kingston A2000 NVMe, 1TB, PCI Express 3.0, M2",
+                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-KINGSTON-SA2000M81000G-1.jpg",
+                "price": 2500,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "Arquimedes #504",
@@ -136,9 +220,9 @@
             "postalCode": 33502,
             "country": "Sonora"
         },
-        "paymentMethod": "Paypal",
-        "totalPrice": 2450,
-        "shippingPrice": 120,
+        "paymentMethod": "VISA",
+        "totalPrice": 2650,
+        "shippingPrice": 150,
         "isPaid": true,
         "isPaidAt":"2020-11-20T23:26:02.834Z",
         "isDelivered": false,
@@ -149,19 +233,32 @@
     {
         "user": "5d713995b721c3bb38c1f525",
         "orderItems": [
-            "5faf866af74d3104bc3ce135", "5faf866af74d3104bc3ce136", "5faf866af74d3104bc3ce133"
+            {
+                "product":"5faf866af74d3104bc3ce137",
+                "name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/715fqILF10L._AC_SY355_.jpg",
+                "price": 2599,
+                "qty": 2
+            },
+            {
+                "product":"5faf866af74d3104bc3ce141",
+                "name": "Teclado Gamer Logitech G213 Prodigy LED RGB, Alámbrico, Negro, (Inglés)",
+                "image": "https://www.cyberpuerta.mx/img/product/L/CP-LOGITECH-920-008084-1.jpg",
+                "price": 869.99,
+                "qty": 3
+            }
         ],
         "shippingAddress": {
             "address": "Ramirez Ayala #1090",
             "city": "Culiacán",
-            "postalCode": 19202,
+            "postalCode": "19202",
             "country": "Sinaloa"
         },
-        "paymentMethod": null,
-        "totalPrice": 3000,
-        "shippingPrice": 100,
-        "isPaid": false,
-        "isPaidAt": null,
+        "paymentMethod": "Master Card",
+        "totalPrice": 7957.97,
+        "shippingPrice": 150,
+        "isPaid": true,
+        "isPaidAt": "2020-01-18T23:34:31.304Z",
         "isDelivered": false,
         "isDeliveredAt": null,
         "createdAt": "2020-01-18T21:26:02.834Z",
@@ -170,16 +267,29 @@
     {
         "user": "5d713995b721c3bb38c1f527",
         "orderItems": [
-            "5faf866af74d3104bc3ce135", "5faf866af74d3104bc3ce137"
+            {
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Procesador AMD Ryzen 3 3200G con Gráficos Radeon Vega 8, S-AM4, 3.60GHz, Quad-Core, 4MB L3, con Disipador Wraith Stealth",
+                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-AMD-YD3200C5FHBOX-1.jpg",
+                "price": 2379,
+                "qty": 1
+            },
+            {
+                "product":"5faf866af74d3104bc3ce135",
+                "name": "Acteck ES-05002 Fuente de Poder Micro Atx 500 W Molex Ventilador 80Mm para Gabinete Slim Modelo S-500, Negro",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/81lqr3XSrjL._AC_SX355_.jpg",
+                "price": 499,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "100 Queen Street West",
             "city": "Toronto",
-            "postalCode": 5222,
+            "postalCode": "5222",
             "country": "Canada"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 6749,
+        "totalPrice": 3878,
         "shippingPrice": 1000,
         "isPaid": true,
         "isPaidAt":"2020-10-20T23:26:02.834Z",
@@ -191,19 +301,25 @@
     {
         "user": "5d713995b721c3bb38c1f528",
         "orderItems": [
-            "5faf866af74d3104bc3ce138", "5faf866af74d3104bc3ce140", "5faf866af74d3104bc3ce141"
+            {
+                "product":"5faf866af74d3104bc3ce137",
+                "name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/715fqILF10L._AC_SY355_.jpg",
+                "price": 2099.99,
+                "qty": 4
+            }
         ],
         "shippingAddress": {
             "address": "Newport beach",
             "city": "California",
-            "postalCode": 92657,
+            "postalCode": "92657",
             "country": "Estados Unidos"
         },
         "paymentMethod": "VISA",
-        "totalPrice": 12500,
+        "totalPrice": 8999.96,
         "shippingPrice": 600,
-        "isPaid": false,
-        "isPaidAt": null,
+        "isPaid": true,
+        "isPaidAt": "2020-02-18T23:34:31.304Z",
         "isDelivered": false,
         "isDeliveredAt": null,
         "createdAt": "2020-02-18T21:26:02.834Z",
@@ -212,17 +328,30 @@
     {
         "user": "5d713995b721c3bb38c1f529",
         "orderItems": [
-            "5faf866af74d3104bc3ce142"
+            {
+                "product":"5faf866af74d3104bc3ce137",
+                "name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/715fqILF10L._AC_SY355_.jpg",
+                "price": 2099.99,
+                "qty": 1
+            },
+            {
+                "product":"5faf866af74d3104bc3ce142",
+                "name": "Monitor HP N246v LED 23.8'', Full HD, Widescreen, HDMI, Negro",
+                "image": "https://www.cyberpuerta.mx/img/product/L/CP-HP-1RM28AA-1.jpg",
+                "price": 1509.99,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "240 W 55th St",
             "city": "New york",
-            "postalCode": 10019,
+            "postalCode": "10019",
             "country": "Estados Unidos"
         },
         "paymentMethod": "VISA",
         "totalPrice": 899,
-        "shippingPrice": 300,
+        "shippingPrice": 3909.98,
         "isPaid": true,
         "isPaidAt":"2020-12-20T23:26:02.834Z",
         "isDelivered": false,
@@ -233,16 +362,22 @@
     {
         "user": "5d713995b721c3bb38c1f530",
         "orderItems": [
-            "5faf866af74d3104bc3ce139" , "5faf866af74d3104bc3ce138"
+            {
+                "product":"5faf866af74d3104bc3ce126",
+                "name": "Tarjeta Madre Gigabyte micro ATX B450M DS3H V2, S-AM4, AMD B450, HDMI, 128GB DDR4 para AMD",
+                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-GIGABYTE-B450MDS3HV2-3.jpg",
+                "price": 2500,
+                "qty": 1
+            }
         ],
         "shippingAddress": {
             "address": "Ramos Millan # 22",
             "city": "Guadalajara",
-            "postalCode": 44160,
+            "postalCode": "44160",
             "country": "Jalisco"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 3374.99,
+        "totalPrice": 2760,
         "shippingPrice": 260,
         "isPaid": true,
         "isPaidAt":"2020-12-23T20:16:22.834Z",
@@ -254,16 +389,22 @@
     {
         "user": "5d713995b721c3bb38c1f526",
         "orderItems": [
-            "5faf866af74d3104bc3ce140", "5faf866af74d3104bc3ce141"
+            {
+                "product":"5faf866af74d3104bc3ce123",
+                "name": "Monitor ASUS VG279QR",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
+                "price": 4000,
+                "qty": 2
+            }
         ],
         "shippingAddress": {
             "address": "AGUSTIN MELGAR 2328",
             "city": "Nuevo León",
-            "postalCode": 64550,
+            "postalCode": "64550",
             "country": "Monterrey"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 869.99,
+        "totalPrice": 8320,
         "shippingPrice": 320,
         "isPaid": true,
         "isPaidAt":"2020-12-23T20:16:22.834Z",

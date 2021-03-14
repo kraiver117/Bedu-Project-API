@@ -3,9 +3,10 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const UserSchema = new mongoose.Schema({
-    name: {
+    fullName: {
         type: String,
-        required: [true, 'Ingresa un nombre']
+        required: [true, 'Ingresa un nombre'],
+        trim: true
     },
     email: {
         type: String,
@@ -14,10 +15,12 @@ const UserSchema = new mongoose.Schema({
         match: [
             /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
             'Ingresa un email valido'
-        ]
+        ],
+        trim: true
     },
     role: {
         type: String,
+        trim: true,
         enum: ['user', 'admin'],
         default: 'user'
     },
@@ -25,7 +28,8 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Ingresa una contraseña'],
         minlength: 6,
-        select: false
+        select: false,
+        trim: true
     }
 }, { timestamps: true });
 
