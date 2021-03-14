@@ -2,8 +2,8 @@
     {
         "_id": "5d713995b721c3bb38c1f5d0",
         "role": "admin",
-        "name": "Angel Gutierrez",
-        "email": "ang@gmail.com",
+        "fullName": "admin",
+        "email": "admin@gmail.com",
         "password": "123456",
         "createdAt": "2020-01-02T21:26:02.834Z",
         "updatedAt": "2020-01-03T21:26:02.304Z"
@@ -11,7 +11,7 @@
     {
         "_id": "5d713995b721c3bb38c1f511",
         "role": "user",
-        "name": "Aleman Rangel",
+        "fullName": "Aleman Rangel",
         "email": "alm@gmail.com",
         "password": "aleman123",
         "createdAt": "2020-02-01T21:26:02.834Z",
@@ -20,7 +20,7 @@
     {
         "_id": "5d713995b721c3bb38c1f512",
         "role": "user",
-        "name": "Antonio Alvarez",
+        "fullName": "Antonio Alvarez",
         "email": "Alv@gmail.com",
         "password": "alv4542",
         "createdAt": "2021-01-18T21:26:02.834Z",
@@ -29,7 +29,7 @@
     {
         "_id": "5d713995b721c3bb38c1f513",
         "role": "user",
-        "name": "Erandi Ramirez",
+        "fullName": "Erandi Ramirez",
         "email": "erd-1992@gmail.com",
         "password": "eramirez344",
         "createdAt": "2020-03-20T21:26:02.834Z",
@@ -38,7 +38,7 @@
     {
         "_id": "5d713995b721c3bb38c1f514",
         "role": "user",
-        "name": "Jeronimo Pino",
+        "fullName": "Jeronimo Pino",
         "email": "Jeroni123@gmail.com",
         "password": "jero1992",
         "createdAt": "2020-03-02T20:26:02.834Z",
@@ -47,7 +47,7 @@
     {
         "_id": "5d713995b721c3bb38c1f515",
         "role": "user",
-        "name": "Joan Cantero",
+        "fullName": "Joan Cantero",
         "email": "cantero293@gmail.com",
         "password": "canter231",
         "createdAt": "2020-05-02T19:26:02.834Z",
@@ -56,7 +56,7 @@
     {
         "_id": "5d713995b721c3bb38c1f516",
         "role": "user",
-        "name": "Alessandro Marin",
+        "fullName": "Alessandro Marin",
         "email": "alemar@gmail.com",
         "password": "@alessan123",
         "createdAt": "2021-02-18T21:26:02.834Z",
@@ -65,7 +65,7 @@
     {
         "_id": "5d713995b721c3bb38c1f517",
         "role": "user",
-        "name": "Daniel Ayala",
+        "fullName": "Daniel Ayala",
         "email": "danyala@gmail.com",
         "password": "dsn1992",
         "createdAt": "2020-11-18T21:26:02.834Z",
@@ -74,7 +74,7 @@
     {
         "_id": "5d713995b721c3bb38c1f518",
         "role": "user",
-        "name": "Raimundo Hernando",
+        "fullName": "Raimundo Hernando",
         "email": "rai-1982@gmail.com",
         "password": "rai@_123",
         "createdAt": "2020-07-18T21:26:02.834Z",
@@ -83,7 +83,7 @@
     {
         "_id": "5d713995b721c3bb38c1f519",
         "role": "user",
-        "name": "Jeronimo Blasco",
+        "fullName": "Jeronimo Blasco",
         "email": "blaster993@gmail.com",
         "password": "origami@1989",
         "createdAt": "2020-09-18T21:26:02.834Z",
@@ -92,7 +92,7 @@
     {
         "_id": "5d713995b721c3bb38c1f521",
         "role": "user",
-        "name": "Ted Mosby",
+        "fullName": "Ted Mosby",
         "email": "teddy@gmail.com",
         "password": "tmosby1",
         "createdAt": "2020-08-18T21:26:02.834Z",
@@ -101,7 +101,7 @@
     {
         "_id": "5d713995b721c3bb38c1f522",
         "role": "user",
-        "name": "Marshall Eriksen",
+        "fullName": "Marshall Eriksen",
         "email": "marsh@gmail.com",
         "password": "marshlily",
         "createdAt": "2020-02-18T21:26:02.834Z",
@@ -110,7 +110,7 @@
     {
         "_id": "5d713995b721c3bb38c1f523",
         "role": "user",
-        "name": "Lily Aldrin",
+        "fullName": "Lily Aldrin",
         "email": "Lilypad@gmail.com",
         "password": "lily2000",
         "createdAt": "2020-03-18T21:26:02.834Z",
@@ -119,7 +119,7 @@
     {
         "_id": "5d713995b721c3bb38c1f524",
         "role": "user",
-        "name": "Robin Sherbatsky",
+        "fullName": "Robin Sherbatsky",
         "email": "robin@gmail.com",
         "password": "rob_sher",
         "createdAt": "2020-01-18T21:26:02.834Z",
@@ -128,7 +128,7 @@
     {
         "_id": "5d713995b721c3bb38c1f525",
         "role": "user",
-        "name": "Bartney Stinson",
+        "fullName": "Bartney Stinson",
         "email": "suit_up@gmail.com",
         "password": "playbookgame",
         "createdAt": "2020-09-18T21:26:02.834Z",
@@ -137,7 +137,7 @@
     {
         "_id": "5d713995b721c3bb38c1f526",
         "role": "user",
-        "name": "Ryan Atwood",
+        "fullName": "Ryan Atwood",
         "email": "Ryan_Chino@gmail.com",
         "password": "atwood2000!",
         "createdAt": "2020-01-18T21:26:02.834Z",
@@ -146,7 +146,7 @@
     {
         "_id": "5d713995b721c3bb38c1f527",
         "role": "user",
-        "name": "Marissa Copper",
+        "fullName": "Marissa Copper",
         "email": "marissa13442@gmail.com",
         "password": "m4riss42004",
         "createdAt": "2020-04-18T21:26:02.834Z",
@@ -155,7 +155,7 @@
     {
         "_id": "5d713995b721c3bb38c1f528",
         "role": "user",
-        "name": "Seth Cohen",
+        "fullName": "Seth Cohen",
         "email": "comics2000@gmail.com",
         "password": "summer_mil<3",
         "createdAt": "2020-10-18T21:26:02.834Z",
@@ -164,7 +164,7 @@
     {
         "_id": "5d713995b721c3bb38c1f529",
         "role": "user",
-        "name": "Summer Roberts",
+        "fullName": "Summer Roberts",
         "email": "summercool@gmail.com",
         "password": "coolest@22",
         "createdAt": "2020-07-18T21:26:02.834Z",
@@ -173,7 +173,7 @@
     {
         "_id": "5d713995b721c3bb38c1f530",
         "role": "user",
-        "name": "Sandy Cohen",
+        "fullName": "Sandy Cohen",
         "email": "sandy_cohen_70@gmail.com",
         "password": "kirsteen&&",
         "createdAt": "2020-09-18T21:26:02.834Z",

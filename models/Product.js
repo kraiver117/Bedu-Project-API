@@ -1,25 +1,25 @@
 const mongoose = require('mongoose');
 
 const ProductSchema = new mongoose.Schema({
-    fullName: {
+    name: {
         type: String,
         required: [true, 'Ingresa un nombre'],
-        trim:true,
+        trim: true,
         unique: true
     },
     brand: {
         type: String,
         required: [true, 'Ingresa una Marca'],
-        trim:true
+        trim: true
     },
     description: {
         type: String,
-        trim:true 
+        trim: true
     },
     category: {
         type: String,
         default: 'General',
-        trim:true
+        trim: true
     },
     price: {
         type: Number,
@@ -27,6 +27,8 @@ const ProductSchema = new mongoose.Schema({
     },
     inStock: {
         type: Number,
+        min: 0,
+        max: 500,
         default: 0
     },
     image: {
