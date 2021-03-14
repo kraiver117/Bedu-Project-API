@@ -5,23 +5,25 @@ const uniqueValidator = require("mongoose-unique-validator");
 
 const OrderSchema = new mongoose.Schema({
     user: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
         unique: true,
         lowercase: true,
-        required: [true, "no puede estar vacío"],
+        required: [true, "No puede estar vacío"],
         index = true,
     },
     OrderItems: {
-        type: String,
-        required: [true, "no puede estar vacío"],
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product',
+        required: [true, "No puede estar vacío"],
 
     },
     ShippingAddress: {
         type: String,
-        required: [true, "no puede estar vacío"], 
+        required: [true, "Ingresar direccion"], 
     },
     paymentMethod: {
-        required: [true, "no puede estar vacío"],
+        required: [true, "No puede estar vacío"],
     },
     totalPrice: { Number },
     shippingPrice: { Number },
