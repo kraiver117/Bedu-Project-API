@@ -1,7 +1,4 @@
 const mongoose = require('mongoose');
-//const bcrypt = require('bcryptjs');
-//const jwt = require('jsonwebtoken');
-// const uniqueValidator = require("mongoose-unique-validator");
 
 const OrderSchema = new mongoose.Schema({
     user: {
@@ -9,25 +6,38 @@ const OrderSchema = new mongoose.Schema({
         ref: 'User'
     },
     orderItems: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Product'
+        name: { type: String, required: true },
+        qty: { type: Number, required: true },
+        image: { type: String, required: true },
+        price: { type: Number, required: true },
+        product: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: 'Product'
+        }
     }],
     shippingAddress: {
-        type: String,
-        required: [true, "Ingrese su direccion"], 
+        address: { type: String, required: true },
+        city: { type: String, required: true },
+        postalCode: { type: String, required: true },
+        country: { type: String, required: true }
     },
     paymentMethod: {
         type:String,
         required: [true, "Ingrese un metodo de pago"],
     },
     totalPrice: { 
-        type: Boolean
+        type: Number,
+        required: true,
+        default: 0.0
      },
     shippingPrice: { 
-        type: Number
+        type: Number,
+        required: true
      },
     isPaid: { 
-        type: Number
+        type: Boolean,
+        default: false
      },
     paidAt: {
         type: Date,
