@@ -8,12 +8,10 @@ const OrderSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     },
-    orderItems: {
-        type: String,
-        // required: [true, "Agregue un producto"],
-        // type: mongoose.Schema.Types.ObjectId,
-        // ref: 'Product'
-    },
+    orderItems: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
+    }],
     shippingAddress: {
         type: String,
         required: [true, "Ingrese su direccion"], 

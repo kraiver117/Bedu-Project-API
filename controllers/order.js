@@ -1,21 +1,21 @@
 const Order = require("../models/Order");
-const Product = require("../models/Product");
 const asyncHandler = require('../middleware/async');
 
 // @desc      Create order
 // @route     POST /v1/orders
 // @access    public
-exports.createOrder = (req, res) =>  {
+exports.createOrder = asyncHandler(async (req, res) =>  {
 
-    const order = new Order(req.body)
+    const order = await Order.create(req.body);
     order.user = req.user.id;
+    console.log(order.user);
 
-    order.save();
     res.status(201).json({
       success: true,
       data: order
     });
-}
+    
+})
 
 // @desc      Get order
 // @route     GET /v1/orders
@@ -35,15 +35,6 @@ exports.getOrders = asyncHandler(async (req, res) => {
 //   res.send(order1);
 // }
 
-// function getOrders(req, res) {
-//   var order1 = new Order(1, '[{"productoId":6, "cantidad":2},{"productoId":6, "cantidad":3}]', "CDMX", "Paypal", 
-//                         900, 100, true, "27/02/2021", true,
-//                         "28/02/2021", "27/02/2021", "27/02/2021");
-//   var order2 = new Order(2, '[{"productoId":3, "cantidad":1},{"productoId":4, "cantidad":4}]', "Puebla", "Transferencia", 
-//                         800, 200, true, "27/02/2021", true,
-//                         "28/02/2021", "27/02/2021", "27/02/2021");
-//   res.send([order1, order2]);
-// }
 
 // function deleteOrder(req, res) {
 //   res.status(200).send(`Orden ${req.params.id} eliminada`);
