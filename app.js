@@ -12,9 +12,6 @@ dotenv.config({ path: './config/config.env' });
 //Connect to database
 connectDB();
 
-//Route Files
-const auth = require('./routes/auth');
-
 // Global Object
 const app = express();
 
