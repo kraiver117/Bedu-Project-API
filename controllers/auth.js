@@ -6,11 +6,11 @@ const asyncHandler = require('../middleware/async');
 // @route   POST /v1/auth/register
 // @access  Public
 exports.register = asyncHandler(async (req, res, next) => {
-    const { name, email, password } = req.body;
+    const { fullName, email, password } = req.body;
 
     //Create user
     const user = await User.create({
-        name,
+        fullName,
         email,
         password
     });
