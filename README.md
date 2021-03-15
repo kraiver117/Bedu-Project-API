@@ -1,6 +1,6 @@
 # Plataforma de e-commerce para venta de productos electrónicos
 
-Proyecto final del curso Backend Fundamentals impartido por Bedu. El proyecto consiste en una API para un e-commerce dedicado a la venda de productos electrónicos como periféricos, laptops, componentes para PC de escritorio, etc.
+Proyecto final del curso Backend Fundamentals impartido por Bedu. El proyecto consiste en una API para un e-commerce dedicado a la venta de productos electrónicos como periféricos, laptops y componentes para PC de escritorio. Con el objetivo primordial de que los usuarios puedan realizar compras online a través de los servicios que ofrece nuestra API, además de que el administrador pueda administrar los pedidos y productos del sistema. 
 
 # Uso
 Renombra el archivo ubicado en la carpeta config/example-config.env a config.env y actualiza a tus propias variables de entorno para correr con éxito el proyecto.
@@ -69,7 +69,7 @@ eramirez344
 3. Como Cliente y Administrador quiero poder VISUALIZAR un solo producto para acceder a su información.
 4. Como Administrador quiero ACTUALIZAR un producto para cambiar o corregir sus atributos.
 5. Como Administrador quiero BORRAR productos que ya no sean necesarios.
-6. Com Administrador quiero CREAR nuevos usuarios para que accedan al sistema.
+6. Como Administrador quiero CREAR nuevos usuarios para que accedan al sistema.
 7. Como Administrador quiero poder VISUALIZAR a todos los usuarios en el sistema para poder tener acceso a su información.
 8. Como Administrador quiero VISUALIZAR a un solo usuario para acceder a su información.
 9. Como Administrador quiero ACTUALIZAR la información de un usuario para poder hacerlo administrador o cambiar sus datos.
