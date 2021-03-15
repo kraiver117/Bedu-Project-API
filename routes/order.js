@@ -15,7 +15,7 @@ const { protect, authorize } = require('../middleware/auth');
 
 router.post('/', protect, createOrder);
 router.get('/myorders', protect, getMyOrders);
-router.get('/:id', protect, getOrderbyId);
+router.get('/:id', protect, authorize('admin'), getOrderbyId);
 router.get('/', protect, authorize('admin'), advancedQueryResults(Order, 'user'), getOrders);
 router.put('/:id/deliver', protect, authorize('admin'), updateOrderToDelivered);
 
