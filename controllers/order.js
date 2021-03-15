@@ -1,52 +1,90 @@
 const Order = require("../models/Order");
+const asyncHandler = require('../middleware/async');
+const ErrorResponse = require("../utils/errorResponse");
 
-function createOrder(req, res) {
-  const order = new Order(req.body);
-  res.status(201).send(order);
-}
-
-function updateOrder(req, res) {
-  var order1 = new Order(Number(req.params.id), '[{"productoId":2, "cantidad":2},{"productoId":2, "cantidad":2}]', "CDMX", "Paypal", 
-                        900, 100, true, "27/02/2021", true,
-                        "28/02/2021", "27/02/2021", "27/02/2021");
-
-  var modificaciones = req.body;
-  order1 = { ...order1, ...modificaciones };
-  res.send(order1);
-}
-
-function getOrders(req, res) {
-  var order1 = new Order(1, '[{"productoId":6, "cantidad":2},{"productoId":6, "cantidad":3}]', "CDMX", "Paypal", 
-                        900, 100, true, "27/02/2021", true,
-                        "28/02/2021", "27/02/2021", "27/02/2021");
-  var order2 = new Order(2, '[{"productoId":3, "cantidad":1},{"productoId":4, "cantidad":4}]', "Puebla", "Transferencia", 
-                        800, 200, true, "27/02/2021", true,
-                        "28/02/2021", "27/02/2021", "27/02/2021");
-  res.send([order1, order2]);
-}
-
-function getOrderbyID(req, res){
-var orderID = req.params.id;
-
-Order.findById(orderID).exec((err, nota) => {
-  if(err) return res.status(500).send({ message: "Error en el servidor" });
-      if(Order){
-          return res.status(200).send({ Order });
-      }else{
-          return res.status(404).send({ message: "No existe la orden" });
-      }
-   
+// @desc      Get Orders
+// @route     GET /v1/orders
+// @access    private/admin
+exports.getOrders = asyncHandler(async (req, res) => {
+  res.status(200).json(res.advancedResults);
 });
-}
 
-function deleteOrder(req, res) {
-  res.status(200).send(`Orden ${req.params.id} eliminada`);
-}
+// @desc      Create order
+// @route     POST /v1/orders
+// @access    private
+exports.createOrder = asyncHandler(async (req, res, next) =>  {
+    const {
+      orderItems,
+      shippingAddress,
+      paymentMethod
+    }=req.body
 
-module.exports = {
-  createOrder,
-  updateOrder,
-  getOrders,
-  getOrderbyID,
-  deleteOrder
-}
+    if(!orderItems && orderItems.length === 0){
+      return next(new ErrorResponse('No existen productos en la orden', 400));
+    }else{
+      const shippingPrice = 150;
+      const totalPrice = (orderItems.reduce((accumulator, item) => accumulator + item.qty * item.price, 0) + shippingPrice).toFixed(2);
+      const isPaid = paymentMethod ? true : false;
+
+      const order = new Order({
+        orderItems, 
+        user: req.user.id,
+        shippingAddress,
+        paymentMethod,
+        isPaid,
+        shippingPrice,
+        totalPrice
+      });
+
+      const createdOrder = await order.save();
+
+      res.status(201).json({
+        success: true,
+        data: createdOrder
+    });
+  }
+})
+
+
+// @desc      get order by ID 
+// @route     GET /v1/orders
+// @access    private
+exports.getOrderbyID = asyncHandler(async (req, res, next) =>  {
+  const order = await Order.findById(req.params.id).populate('user');
+  
+  if(order){
+    res.status(200).json({
+      success: true,
+      data: order
+    })
+  }else{
+    return next(new ErrorResponse('No se encontró la orden', 404));
+  }
+})
+
+// @desc Get logged in user orders 
+//@route Get /v1/orders/myorders 
+//@access Private 
+exports.getMyOrders = asyncHandler(async (req, res, next) =>  {
+  const orders = await Order.find({ user: req.user.id });
+  
+  res.status(200).json({ success: true, data: orders});
+})
+
+// @desc Update order to delivered 
+//@route PUT /v1/orders/:id/deliver 
+//@access Private/admin 
+exports.updateOrderToDelivered = asyncHandler(async (req, res, next) =>  {
+  const order = await Order.findById(req.params.id);
+
+  if(order){
+    order.isDelivered = true;
+    order.deliveredAt = Date.now();
+
+    const updatedOrder = await order.save();
+
+    res.status(200).json({ success: true, data: updatedOrder });    
+  }else{
+    return next(new ErrorResponse('No se encontró la orden', 404));
+  }
+})

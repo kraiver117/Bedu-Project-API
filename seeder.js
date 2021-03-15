@@ -8,6 +8,8 @@ dotenv.config({ path: './config/config.env' });
 
 //Load models
 const User = require('./models/User');
+const Product = require('./models/Product');
+const Order = require('./models/Order');
 
 //Connect to DB
 mongoose.connect(process.env.MONGO_URI, {
@@ -28,8 +30,12 @@ const importData = async () => {
     try {
         //Delete Data before created in order to avoid errors con CLI
         await User.deleteMany();
+        await Product.deleteMany();
+        await Order.deleteMany();
 
         await User.create(users);
+        await Product.create(products);
+        await Order.create(orders);
 
         console.log('Data imported'.green.inverse);
         process.exit();
@@ -42,6 +48,8 @@ const importData = async () => {
 const deleteData = async () => {
     try {
         await User.deleteMany();
+        await Product.deleteMany();
+        await Order.deleteMany();
 
         console.log('Data destroyed...'.red.inverse);
         process.exit();

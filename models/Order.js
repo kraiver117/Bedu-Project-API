@@ -1,64 +1,55 @@
 const mongoose = require('mongoose');
-//const bcrypt = require('bcryptjs');
-//const jwt = require('jsonwebtoken');
-const uniqueValidator = require("mongoose-unique-validator");
 
 const OrderSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        unique: true,
-        lowercase: true,
-        required: [true, "No puede estar vacío"],
-        index = true,
+        ref: 'User'
     },
-    OrderItems: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Product',
-        required: [true, "No puede estar vacío"],
-
-    },
-    ShippingAddress: {
-        type: String,
-        required: [true, "Ingresar direccion"], 
+    orderItems: [{
+        name: { type: String, required: true },
+        qty: { type: Number, required: true },
+        image: { type: String, required: true },
+        price: { type: Number, required: true },
+        product: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: 'Product'
+        }
+    }],
+    shippingAddress: {
+        address: { type: String, required: true },
+        city: { type: String, required: true },
+        postalCode: { type: String, required: true },
+        country: { type: String, required: true }
     },
     paymentMethod: {
-        required: [true, "No puede estar vacío"],
+        type:String,
+        required: [true, "Ingrese un metodo de pago"],
     },
-    totalPrice: { Number },
-    shippingPrice: { Number },
-    isPaid: { Boolean },
+    totalPrice: { 
+        type: Number,
+        required: true,
+        default: 0.0
+     },
+    shippingPrice: { 
+        type: Number,
+        required: true
+     },
+    isPaid: { 
+        type: Boolean,
+        default: false
+     },
     paidAt: {
-        //
+        type: Date,
+        default: Date.now()
     },
-    isDelivered: { Boolean },
+    isDelivered: { 
+        type: Boolean,
+        default: false
+     },
     deliveredAt: {
-        //
-    },
-    createdAt: {
-        //timestamps
-    },
-    updatedAt: {
-        //timestamps
+        type: Date,
     },
 }, { timestamps: true });
 
 module.exports = mongoose.model("Orders", OrderSchema);
-
-
-OrderSchema.methods.publicData = function(){
-    return{
-        User = this.User,
-        OrderItems = this.OrderItems,
-        ShippingAddress = this.ShippingAddress,
-        paymentMethod = this.paymentMethod,
-        totalPrice = this.totalPrice,
-        shippingPrice = this.shippingPrice,
-        isPaid = this.isPaid,
-        paidAt = this.paidAt,
-        isDelivered = this.isDelivered,
-        deliveredAt = this.deliveredAt,
-        createdAt = this.createdAt,
-        updatedAt = this.updatedAt,
-    };
-};
