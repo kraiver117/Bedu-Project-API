@@ -1,12 +1,19 @@
 const User = require('../models/User');
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/async');
+const generateToken = require('../utils/generateToken');
 
 // @desc    Register user
 // @route   POST /v1/auth/register
 // @access  Public
 exports.register = asyncHandler(async (req, res, next) => {
     const { fullName, email, password } = req.body;
+
+    const userExist = await User.findOne({ email });
+
+    if (userExist) {
+        return next(new ErrorResponse('Este email ya se encuentra registrado', 400));
+    }
 
     //Create user
     const user = await User.create({
@@ -15,7 +22,13 @@ exports.register = asyncHandler(async (req, res, next) => {
         password
     });
 
-    sendTokenResponse(user, 200, res);
+    res.status(200).json({
+        _id: user._id,
+        fullName: user.fullName,
+        email: user.email,
+        role: user.role,
+        token: generateToken(user._id)
+    });
 });
 
 // @desc    Login user
@@ -26,24 +39,30 @@ exports.login = asyncHandler(async (req, res, next) => {
 
     //Validate email & password
     if (!email || !password) {
-        return next(new ErrorResponse('Por favor ingresa un email y password'), 400);
+        return next(new ErrorResponse('Por favor ingresa un email y password', 400));
     }
 
     //Check for user
     const user = await User.findOne({ email }).select('+password');
 
     if (!user) {
-        return next(new ErrorResponse('Credenciales Inválidas'), 401);
+        return next(new ErrorResponse('Credenciales Inválidas', 401));
     }
 
     //Check if password matches
     const isMatch = await user.matchPassword(password);
 
     if (!isMatch) {
-        return next(new ErrorResponse('Credenciales Inválidas'), 401);
+        return next(new ErrorResponse('Contraseña incorrecta', 401));
     }
 
-    sendTokenResponse(user, 200, res);
+    res.status(200).json({
+        _id: user._id,
+        fullName: user.fullName,
+        email: user.email,
+        role: user.role,
+        token: generateToken(user._id)
+    });
 });
 
 // @desc      Update user details
