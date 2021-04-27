@@ -7,11 +7,6 @@ const ProductSchema = new mongoose.Schema({
         trim: true,
         unique: true
     },
-    brand: {
-        type: String,
-        required: [true, 'Ingresa una Marca'],
-        trim: true
-    },
     description: {
         type: String,
         trim: true
@@ -23,16 +18,17 @@ const ProductSchema = new mongoose.Schema({
     },
     price: {
         type: Number,
-        default: 0.00
+        required: [true, 'Ingresa un precio']
     },
     inStock: {
         type: Number,
+        required: [true, 'Ingresa una cantidad en stock'],
         min: 0,
-        max: 500,
-        default: 0
+        max: 500
     },
     image: {
         type: String,
+        trim: true,
         default: 'https://i.ibb.co/Jv17Vfy/default.jpg'
     }
 }, { timestamps: true });
