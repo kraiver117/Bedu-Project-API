@@ -58,7 +58,7 @@ exports.updateUser = asyncHandler(async (req, res, next) => {
 //@route    PUT /v1/users/:id
 //@access   Private/Admin
 exports.deleteUser = asyncHandler(async (req, res, next) => {
-  const user = await User.findOneAndDelete({ _id: req.user.id });
+  const user = await User.findOneAndDelete({ _id: req.params.id });
 
   res.status(200).json({
     success: true,
