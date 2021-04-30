@@ -72,14 +72,14 @@ exports.updateDetails = asyncHandler(async (req, res, next) => {
     const user = await User.findById(req.user._id);
 
     if (user) {
-        user.name = req.body.fullName || user.fullName
-        user.email = req.body.email || user.email
+        user.fullName = req.body.fullName || user.fullName;
+        user.email = req.body.email || user.email;
 
-        if(req.body.password) {
+        if (req.body.password) {
             user.password = req.body.password
         }
 
-        const updatedUser = await user.save()
+        const updatedUser = await user.save();
 
         res.json({
             _id: updatedUser._id,
