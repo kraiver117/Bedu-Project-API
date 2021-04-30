@@ -69,22 +69,28 @@ exports.login = asyncHandler(async (req, res, next) => {
 // @route     PUT v1/auth/updatedetails
 // @access    Private
 exports.updateDetails = asyncHandler(async (req, res, next) => {
-    if (req.body.role && !req.user.role !== 'admin') {
-        return next(new ErrorResponse('Solo un administrador puede cambiar el rol de un usuario', 401));
+    const user = await User.findById(req.user._id);
+
+    if (user) {
+        user.name = req.body.fullName || user.fullName
+        user.email = req.body.email || user.email
+
+        if(req.body.password) {
+            user.password = req.body.password
+        }
+
+        const updatedUser = await user.save()
+
+        res.json({
+            _id: updatedUser._id,
+            fullName: updatedUser.fullName,
+            email: updatedUser.email,
+            role: updatedUser.role,
+            token: generateToken(updatedUser._id)
+        })
+    } else {
+        return next(new ErrorResponse('Usuario no encontrado', 404));
     }
-
-    const user = await User.findByIdAndUpdate(req.user.id, req.body, {
-        new: true,
-        runValidators: true,
-    });
-
-    res.status(200).json({
-        _id: user._id,
-        fullName: user.fullName,
-        email: user.email,
-        role: user.role,
-        token: generateToken(user._id)
-    });
 });
 
 // @desc      Update password
