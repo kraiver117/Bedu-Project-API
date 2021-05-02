@@ -87,3 +87,16 @@ exports.updateOrderToDelivered = asyncHandler(async (req, res, next) => {
     return next(new ErrorResponse('No se encontró la orden', 404));
   }
 });
+
+// @desc Delete order
+//@route Delete /v1/order/:id
+//@access Private/admin 
+exports.deleteOrder= asyncHandler(async (req, res, next) => {
+  const order = await Order.findOneAndDelete({ _id: req.params.id });
+
+  if (order) {
+    res.status(200).json({ success: true, data: order });
+  } else {
+    return next(new ErrorResponse('No se encontró la orden', 404));
+  }
+});
