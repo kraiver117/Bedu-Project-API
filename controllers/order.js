@@ -16,22 +16,21 @@ exports.createOrder = asyncHandler(async (req, res, next) => {
   const {
     orderItems,
     shippingAddress,
-    paymentMethod
+    paymentMethod,
+    itemsPrice,
+    shippingPrice,
+    totalPrice
   } = req.body;
 
   if (!orderItems && orderItems.length === 0) {
     return next(new ErrorResponse('No existen productos en la orden', 400));
   } else {
-    const shippingPrice = 150;
-    const totalPrice = (orderItems.reduce((accumulator, item) => accumulator + item.qty * item.price, 0) + shippingPrice).toFixed(2);
-    const isPaid = paymentMethod ? true : false;
-
     const order = new Order({
       orderItems,
       user: req.user.id,
       shippingAddress,
       paymentMethod,
-      isPaid,
+      itemsPrice,
       shippingPrice,
       totalPrice
     });
