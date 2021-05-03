@@ -27,6 +27,11 @@ if (process.env.NODE_ENV === 'development') {
 //Routes
 app.use('/v1', require('./routes/index'));
 
+//Paypal config
+app.get('/v1/config/paypal', (req, res) =>
+    res.send(process.env.PAYPAL_CLIENT_ID)
+);
+
 //Middleware to handling errors
 app.use(errorHandler);
 
