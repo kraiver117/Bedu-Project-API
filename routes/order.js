@@ -6,7 +6,8 @@ const {
    getOrderbyId,
    getMyOrders,
    updateOrderToDelivered,
-   deleteOrder
+   deleteOrder,
+   updateOrderToPay
 } = require('../controllers/order');
 
 const Order = require('../models/Order');
@@ -20,5 +21,6 @@ router.get('/:id', protect, authorize('admin'), getOrderbyId);
 router.get('/', protect, authorize('admin'), advancedQueryResults(Order, 'user'), getOrders);
 router.delete('/:id', protect, authorize('admin'), deleteOrder);
 router.put('/:id/deliver', protect, authorize('admin'), updateOrderToDelivered);
+router.put('/:id/pay', protect, authorize('admin'), updateOrderToPay);
 
 module.exports = router;

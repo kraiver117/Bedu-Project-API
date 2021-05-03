@@ -88,6 +88,32 @@ exports.updateOrderToDelivered = asyncHandler(async (req, res, next) => {
   }
 });
 
+// @desc Update order to pay 
+//@route PUT /v1/orders/:id/pay
+//@access Private
+exports.updateOrderToPay = asyncHandler(async (req, res, next) => {
+  const order = await Order.findById(req.params.id);
+
+  if (order) {
+    order.isPaid = true;
+    order.paidAt = Date.now();
+    order.paymentResult = {
+      id: req.body.id,
+      status: req.body.status,
+      update_time: req.body.update_time,
+      email_address: req.body.payer.email_address
+    }
+
+    const updatedOrder = await order.save();
+
+    res.status(200).json({ success: true, data: updatedOrder });
+  } else {
+    return next(new ErrorResponse('No se encontró la orden', 404));
+  }
+});
+
+
+
 // @desc Delete order
 //@route Delete /v1/order/:id
 //@access Private/admin 
