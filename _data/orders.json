@@ -3,18 +3,18 @@
         "user": "5d713995b721c3bb38c1f511",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce123",
-                "name": "Monitor ASUS VG279QR",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
-                "price": 4000,
+                "product":"5faf866af74d3104bc3ce126",
+                "name": "Taza Full Stack Javascript",
+                "image": "/images/tazaFSJavascript.png",
+                "price": 150,
                 "qty": 2
             },
             {
-                "product":"5faf866af74d3104bc3ce127",
-                "name": "Tarjeta Madre ASUS micro ATX MB PRIME A320M-K, S-AM4, AMD A320, HDMI, 32GB DDR4 para AMD",
-                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-ASUS-90MB0TV0-M0AAY0-1.jpg",
-                "price": 1200,
-                "qty": 1
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
+                "qty": 2
             }
         ],
         "shippingAddress": {
@@ -24,7 +24,7 @@
             "country": "Michoacan"
         },
         "paymentMethod": "Master Card",
-        "totalPrice": 9350,
+        "totalPrice": 910,
         "shippingPrice": 150,
         "isPaid": true,
         "paidAt": "2020-11-18T23:34:31.834Z",
@@ -37,18 +37,18 @@
         "user": "5d713995b721c3bb38c1f513",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce129",
-                "name": "Mouse Gamer Logitech G600 Láser, Alámbrico, USB, 8200DPI, Negro",
-                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-LOGITECH-910-003879-1.jpg",
-                "price": 749,
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
                 "qty": 1
             },
             {
-                "product":"5faf866af74d3104bc3ce135",
-                "name": "Acteck ES-05002 Fuente de Poder Micro Atx 500 W Molex Ventilador 80Mm para Gabinete Slim Modelo S-500, Negro",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/81lqr3XSrjL._AC_SX355_.jpg",
-                "price": 499,
-                "qty": 1
+                "product":"5faf866af74d3104bc3ce130",
+                "name": "Playera Bedu",
+                "image": "/images/playeraBedu.png",
+                "price": 120,
+                "qty": 2
             }
         ],
         "shippingAddress": {
@@ -58,7 +58,7 @@
             "country": "Jalisco"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 1448,
+        "totalPrice": 620,
         "shippingPrice": 150,
         "isPaid": true,
         "paidAt":"2020-11-20T21:26:02.834Z",
@@ -71,24 +71,24 @@
         "user": "5d713995b721c3bb38c1f515",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce137",
-                "name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/715fqILF10L._AC_SY355_.jpg",
-                "price": 2599,
-                "qty": 2
-            },
-            {
-                "product":"5faf866af74d3104bc3ce139",
-                "name": "ADATA Disco Duro Externo HDD HD710P",
-                "image": "https://m.media-amazon.com/images/I/81uviPRH86L._AC_SS450_.jpg",
-                "price": 1509.99,
+                "product":"5faf866af74d3104bc3ce130",
+                "name": "Playera Bedu",
+                "image": "/images/playeraBedu.png",
+                "price": 120,
                 "qty": 1
             },
             {
-                "product":"5faf866af74d3104bc3ce141",
-                "name": "Teclado Gamer Logitech G213 Prodigy LED RGB, Alámbrico, Negro, (Inglés)",
-                "image": "https://www.cyberpuerta.mx/img/product/L/CP-LOGITECH-920-008084-1.jpg",
-                "price": 869.99,
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
+                "qty": 1
+            },
+            {
+                "product":"5faf866af74d3104bc3ce126",
+                "name": "Taza Full Stack Javascript",
+                "image": "/images/tazaFSJavascript.png",
+                "price": 150,
                 "qty": 1
             }
         ],
@@ -99,7 +99,7 @@
             "country": "Guanajuato"
         },
         "paymentMethod": "VISA",
-        "totalPrice": 7727.98,
+        "totalPrice": 650,
         "shippingPrice": 150,
         "isPaid": true,
         "paidAt":"2020-12-20T22:26:02.834Z",
@@ -112,11 +112,11 @@
         "user": "5d713995b721c3bb38c1f516",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce142",
-                "name": "Monitor HP N246v LED 23.8'', Full HD, Widescreen, HDMI, Negro",
-                "image": "https://www.cyberpuerta.mx/img/product/L/CP-HP-1RM28AA-1.jpg",
-                "price": 1509.99,
-                "qty": 1
+                "product":"5faf866af74d3104bc3ce135",
+                "name": "Mochila Data Analysis expert",
+                "image": "/images/mochilaDAExpert.png",
+                "price": 250,
+                "qty": 2
             }
         ],
         "shippingAddress": {
@@ -126,7 +126,7 @@
             "country": "Sinaloa"
         },
         "paymentMethod": "VISA",
-        "totalPrice": 1659.99,
+        "totalPrice": 650,
         "shippingPrice": 150,
         "isPaid": true,
         "paidAt": "2020-01-18T23:34:31.304Z",
@@ -139,17 +139,17 @@
         "user": "5d713995b721c3bb38c1f521",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce125",
-                "name": "Monitor Gamer Curvo Samsung LC27F390FHL LED 27'', Full HD, Widescreen, FreeSync, HDMI, Negro",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
-                "price": 6000,
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
                 "qty": 1
             },
             {
-                "product":"5faf866af74d3104bc3ce124",
-                "name": "SSD Kingston A2000 NVMe, 1TB, PCI Express 3.0, M2",
-                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-KINGSTON-SA2000M81000G-1.jpg",
-                "price": 2500,
+                "product":"5faf866af74d3104bc3ce126",
+                "name": "Taza Full Stack Javascript",
+                "image": "/images/tazaFSJavascript.png",
+                "price": 150,
                 "qty": 1
             }
         ],
@@ -160,7 +160,7 @@
             "country": "Sonora"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 8650,
+        "totalPrice": 530,
         "shippingPrice": 150,
         "isPaid": true,
         "paidAt":"2020-11-20T23:26:02.834Z",
@@ -173,17 +173,10 @@
         "user": "5d713995b721c3bb38c1f5d0",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce139",
-                "name": "ADATA Disco Duro Externo HDD HD710P",
-                "image": "https://m.media-amazon.com/images/I/81uviPRH86L._AC_SS450_.jpg",
-                "price": 1509.99,
-                "qty": 1
-            },
-            {
-                "product":"5faf866af74d3104bc3ce141",
-                "name": "Teclado Gamer Logitech G213 Prodigy LED RGB, Alámbrico, Negro, (Inglés)",
-                "image": "https://www.cyberpuerta.mx/img/product/L/CP-LOGITECH-920-008084-1.jpg",
-                "price": 869.99,
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
                 "qty": 1
             }
         ],
@@ -194,7 +187,7 @@
             "country": "Sinaloa"
         },
         "paymentMethod": "Master Card",
-        "totalPrice": 2529.98,
+        "totalPrice": 380,
         "shippingPrice": 150,
         "isPaid": true,
         "paidAt": "2020-01-18T23:34:31.304Z",
@@ -207,11 +200,11 @@
         "user": "5d713995b721c3bb38c1f524",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce124",
-                "name": "SSD Kingston A2000 NVMe, 1TB, PCI Express 3.0, M2",
-                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-KINGSTON-SA2000M81000G-1.jpg",
-                "price": 2500,
-                "qty": 1
+                "product":"5faf866af74d3104bc3ce126",
+                "name": "Taza Full Stack Javascript",
+                "image": "/images/tazaFSJavascript.png",
+                "price": 150,
+                "qty": 2
             }
         ],
         "shippingAddress": {
@@ -221,7 +214,7 @@
             "country": "Sonora"
         },
         "paymentMethod": "VISA",
-        "totalPrice": 2650,
+        "totalPrice": 450,
         "shippingPrice": 150,
         "isPaid": true,
         "paidAt":"2020-11-20T23:26:02.834Z",
@@ -234,17 +227,10 @@
         "user": "5d713995b721c3bb38c1f525",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce137",
-                "name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/715fqILF10L._AC_SY355_.jpg",
-                "price": 2599,
-                "qty": 2
-            },
-            {
-                "product":"5faf866af74d3104bc3ce141",
-                "name": "Teclado Gamer Logitech G213 Prodigy LED RGB, Alámbrico, Negro, (Inglés)",
-                "image": "https://www.cyberpuerta.mx/img/product/L/CP-LOGITECH-920-008084-1.jpg",
-                "price": 869.99,
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
                 "qty": 3
             }
         ],
@@ -255,7 +241,7 @@
             "country": "Sinaloa"
         },
         "paymentMethod": "Master Card",
-        "totalPrice": 7957.97,
+        "totalPrice": 840,
         "shippingPrice": 150,
         "isPaid": true,
         "paidAt": "2020-01-18T23:34:31.304Z",
@@ -268,17 +254,24 @@
         "user": "5d713995b721c3bb38c1f527",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce128",
-                "name": "Procesador AMD Ryzen 3 3200G con Gráficos Radeon Vega 8, S-AM4, 3.60GHz, Quad-Core, 4MB L3, con Disipador Wraith Stealth",
-                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-AMD-YD3200C5FHBOX-1.jpg",
-                "price": 2379,
-                "qty": 1
+                "product":"5faf866af74d3104bc3ce130",
+                "name": "Playera Bedu",
+                "image": "/images/playeraBedu.png",
+                "price": 120,
+                "qty": 2
             },
             {
-                "product":"5faf866af74d3104bc3ce135",
-                "name": "Acteck ES-05002 Fuente de Poder Micro Atx 500 W Molex Ventilador 80Mm para Gabinete Slim Modelo S-500, Negro",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/81lqr3XSrjL._AC_SX355_.jpg",
-                "price": 499,
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
+                "qty": 2
+            },
+            {
+                "product":"5faf866af74d3104bc3ce126",
+                "name": "Taza Full Stack Javascript",
+                "image": "/images/tazaFSJavascript.png",
+                "price": 150,
                 "qty": 1
             }
         ],
@@ -289,7 +282,7 @@
             "country": "Canada"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 3878,
+        "totalPrice": 1750,
         "shippingPrice": 1000,
         "isPaid": true,
         "paidAt":"2020-10-20T23:26:02.834Z",
@@ -302,11 +295,11 @@
         "user": "5d713995b721c3bb38c1f528",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce137",
-                "name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/715fqILF10L._AC_SY355_.jpg",
-                "price": 2099.99,
-                "qty": 4
+                "product":"5faf866af74d3104bc3ce130",
+                "name": "Playera Bedu",
+                "image": "/images/playeraBedu.png",
+                "price": 120,
+                "qty": 2
             }
         ],
         "shippingAddress": {
@@ -316,7 +309,7 @@
             "country": "Estados Unidos"
         },
         "paymentMethod": "VISA",
-        "totalPrice": 8999.96,
+        "totalPrice": 840,
         "shippingPrice": 600,
         "isPaid": true,
         "paidAt": "2020-02-18T23:34:31.304Z",
@@ -329,18 +322,11 @@
         "user": "5d713995b721c3bb38c1f529",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce137",
-                "name": "GIGABYTE GeForce GT 1030 GV-N1030D5-2GL Low Profile 2G",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/715fqILF10L._AC_SY355_.jpg",
-                "price": 2099.99,
-                "qty": 1
-            },
-            {
-                "product":"5faf866af74d3104bc3ce142",
-                "name": "Monitor HP N246v LED 23.8'', Full HD, Widescreen, HDMI, Negro",
-                "image": "https://www.cyberpuerta.mx/img/product/L/CP-HP-1RM28AA-1.jpg",
-                "price": 1509.99,
-                "qty": 1
+                "product":"5faf866af74d3104bc3ce126",
+                "name": "Taza Full Stack Javascript",
+                "image": "/images/tazaFSJavascript.png",
+                "price": 150,
+                "qty": 2
             }
         ],
         "shippingAddress": {
@@ -350,8 +336,8 @@
             "country": "Estados Unidos"
         },
         "paymentMethod": "VISA",
-        "totalPrice": 899,
-        "shippingPrice": 3909.98,
+        "totalPrice": 600,
+        "shippingPrice": 300,
         "isPaid": true,
         "paidAt":"2020-12-20T23:26:02.834Z",
         "isDelivered": false,
@@ -363,10 +349,10 @@
         "user": "5d713995b721c3bb38c1f530",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce126",
-                "name": "Tarjeta Madre Gigabyte micro ATX B450M DS3H V2, S-AM4, AMD B450, HDMI, 128GB DDR4 para AMD",
-                "image": "https://www.cyberpuerta.mx/img/product/XL/CP-GIGABYTE-B450MDS3HV2-3.jpg",
-                "price": 2500,
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
                 "qty": 1
             }
         ],
@@ -377,8 +363,8 @@
             "country": "Jalisco"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 2760,
-        "shippingPrice": 260,
+        "totalPrice": 330,
+        "shippingPrice": 100,
         "isPaid": true,
         "paidAt":"2020-12-23T20:16:22.834Z",
         "isDelivered": false,
@@ -390,11 +376,18 @@
         "user": "5d713995b721c3bb38c1f526",
         "orderItems": [
             {
-                "product":"5faf866af74d3104bc3ce123",
-                "name": "Monitor ASUS VG279QR",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/81eGtZyyavL._AC_SL1500_.jpg",
-                "price": 4000,
+                "product":"5faf866af74d3104bc3ce130",
+                "name": "Playera Bedu",
+                "image": "/images/playeraBedu.png",
+                "price": 120,
                 "qty": 2
+            },
+            {
+                "product":"5faf866af74d3104bc3ce128",
+                "name": "Mochila Bedu",
+                "image": "/images/mochilaBedu.png",
+                "price": 230,
+                "qty": 1
             }
         ],
         "shippingAddress": {
@@ -404,8 +397,8 @@
             "country": "Monterrey"
         },
         "paymentMethod": "Paypal",
-        "totalPrice": 8320,
-        "shippingPrice": 320,
+        "totalPrice": 570,
+        "shippingPrice": 100,
         "isPaid": true,
         "paidAt":"2020-12-23T20:16:22.834Z",
         "isDelivered": false,
