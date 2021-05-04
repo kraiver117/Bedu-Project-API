@@ -21,6 +21,6 @@ router.get('/:id', protect, authorize('user', 'admin'), getOrderbyId);
 router.get('/', protect, authorize('admin'), advancedQueryResults(Order, 'user'), getOrders);
 router.delete('/:id', protect, authorize('admin'), deleteOrder);
 router.put('/:id/deliver', protect, authorize('admin'), updateOrderToDelivered);
-router.put('/:id/pay', protect, authorize('admin'), updateOrderToPay);
+router.put('/:id/pay', protect, authorize('user', 'admin'), updateOrderToPay);
 
 module.exports = router;
