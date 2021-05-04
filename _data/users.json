@@ -36,6 +36,15 @@
         "updatedAt": "2020-01-03T21:26:02.304Z"
     },
     {
+        "_id": "5d713995b721c3bb38c1f5e9",
+        "role": "user",
+        "fullName": "user",
+        "email": "user@gmail.com",
+        "password": "123456",
+        "createdAt": "2020-01-02T21:26:02.834Z",
+        "updatedAt": "2020-01-03T21:26:02.304Z"
+    },
+    {
         "_id": "5d713995b721c3bb38c1f511",
         "role": "user",
         "fullName": "Aleman Rangel",
