@@ -5,6 +5,7 @@ const {
    getProductById,
    createProduct,
    updateProduct,
+   searchProducts,
    deleteProduct
 } = require('../controllers/product');
 
@@ -15,6 +16,7 @@ const { protect, authorize } = require('../middleware/auth');
 
 router.get('/', advancedQueryResults(Product), getAllProducts);
 router.get('/:id', getProductById);
+router.get('/search/:keyword', searchProducts);
 router.post('/', protect, authorize('admin'), createProduct);
 router.put('/:id', protect, authorize('admin'), updateProduct);
 router.delete('/:id', protect, authorize('admin'), deleteProduct);
