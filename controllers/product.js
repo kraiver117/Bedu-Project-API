@@ -13,7 +13,7 @@ exports.getAllProducts = asyncHandler(async (req, res, next) => {
 // @route    GET /v1/products/:id
 // @access   Public
 exports.getProductById = asyncHandler(async (req, res, next) => {
-  const product = await Product.findById(req.params.id);
+  const product = await Product.findById(req.params.id).populate({ path: 'reviews', populate: { path: 'user', model: 'User'} });
   if (!product) {
     return next(new ErrorResponse('El producto no existe', 404));
   }
