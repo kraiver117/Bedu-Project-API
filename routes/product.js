@@ -6,6 +6,7 @@ const {
    createProduct,
    updateProduct,
    searchProducts,
+   createProductReview,
    deleteProduct
 } = require('../controllers/product');
 
@@ -18,6 +19,7 @@ router.get('/', advancedQueryResults(Product), getAllProducts);
 router.get('/:id', getProductById);
 router.get('/search/:keyword', searchProducts);
 router.post('/', protect, authorize('admin'), createProduct);
+router.post('/:id/reviews', protect, createProductReview);
 router.put('/:id', protect, authorize('admin'), updateProduct);
 router.delete('/:id', protect, authorize('admin'), deleteProduct);
 
