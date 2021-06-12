@@ -67,10 +67,44 @@ exports.deleteProduct = asyncHandler(async (req, res, next) => {
   });
 });
 
+// @desc  Create new product review
+// @route POST /v1/products/:id/reviews
+// @access Private
+exports.createProductReview = asyncHandler(async (req, res, next) => {
+  const { title, comment, rating } = req.body;
+
+  const product = await Product.findById(req.params.id).exec();
+
+  if (product) {
+    const alreadyReviewed = product.reviews.find(review => review.user.toString() === req.user._id.toString());
+
+    if (alreadyReviewed) {
+      res.status(400).json({ message: 'Ya has agregado una review a este producto' });
+    } else {
+      const review = {
+        name: req.user.fullName,
+        title,
+        comment,
+        rating: Number(rating),
+        user: req.user._id
+      }
+  
+      product.reviews.push(review);
+      product.numReviews = Number(product.reviews.length);
+      product.rating = product.reviews.reduce((acc, item) => item.rating + acc, 0) / product.reviews.length;
+  
+      await product.save();
+  
+      res.status(201).json({ message: 'Review Agregada'});
+    }
+  } else {
+    res.status(404).json({ message: 'No se encontró el producto' });
+  }
+});
+
 // @desc  Search products
 // @route GET /v1/products/search/:keyword
 // @access public
-
 exports.searchProducts = asyncHandler(async (req, res, next) => {
   const pageSize = Number(req.query.pageSize) || 3;
   const page = Number(req.query.page) || 1;
