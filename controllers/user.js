@@ -70,7 +70,7 @@ exports.resetPassword = asyncHandler(async (req, res, next) => {
   await user.save();
 
   res.status(200).json({
-    message: 'Te hemos enviado un correo electrónico, revisa los detalles para reestablecer tu contraseña',
+    message: 'Te hemos enviado un correo electrónico, revisa los detalles para restablecer tu contraseña',
     success: true
   });
 });
