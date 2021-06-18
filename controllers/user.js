@@ -54,6 +54,27 @@ exports.updateUser = asyncHandler(async (req, res, next) => {
   });
 });
 
+// @desc    Reset Password
+//@route    PUT /v1/user/resetPassword
+//@access   Public
+exports.resetPassword = asyncHandler(async (req, res, next) => {
+  const { email, password } = req.body;
+  const user = await User.findOne({'email': email});
+
+  if (!user) {
+    return next(new ErrorResponse('Este correo electrónico no se encuentra registrado', 404));
+  }
+
+  user.password = password;
+
+  await user.save();
+
+  res.status(200).json({
+    message: 'Te hemos enviado un correo electrónico, revisa los detalles para restablecer tu contraseña',
+    success: true
+  });
+});
+
 // @desc    Delete user
 //@route    PUT /v1/users/:id
 //@access   Private/Admin
