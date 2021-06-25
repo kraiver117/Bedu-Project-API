@@ -6,7 +6,23 @@ const asyncHandler = require('../middleware/async');
 // @route    GET /v1/products
 // @access   Public
 exports.getAllProducts = asyncHandler(async (req, res, next) => {
-  res.status(200).json(res.advancedResults);
+  const pageSize = 3;
+  let page = Number(req.query.page) || 1;
+  const category = req.query.category ? {
+      name: {
+        $regex: req.query.category,
+        $options: 'i'
+      }
+    } : {};
+
+  const count = await Product.countDocuments({ ...category });
+  const totalPages = Math.ceil(count / pageSize);
+
+  if (page > totalPages) page = 1;
+
+  const data = await Product.find({ ...category }).limit(pageSize).skip(pageSize * (page - 1));
+
+  res.json({ data, page, totalPages })
 });
 
 // @desc    Get single product
