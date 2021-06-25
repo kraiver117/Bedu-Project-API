@@ -41,7 +41,7 @@ const advancedResults = (model, populate) => async (req, res, next) => {
     const total = await model.countDocuments(JSON.parse(queryStr));
     const totalPages = Math.ceil(total / (limit ? limit : total));
 
-    query = query.skip((limit * (page - 1))).limit(limit);
+    query = query.skip(limit * (page - 1)).limit(limit);
 
     if (populate) {
         query = query.populate(populate);
