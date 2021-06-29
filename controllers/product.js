@@ -29,6 +29,23 @@ exports.getAllProducts = asyncHandler(async (req, res, next) => {
   res.json({ data, page, totalPages })
 });
 
+// @desc     Get N Random products
+// @route    GET /v1/random
+// @access   Public
+exports.getRandomProducts = asyncHandler(async (req, res, next) => {
+  Product.aggregate([
+    {
+      $sample: { size: 5 }
+    }
+  ], function(err, result) {
+    if (err){
+      res.status(404).json('No se encontraron productos');
+    } else {
+      res.status(200).json(result);
+    }
+  });
+});
+
 // @desc    Get single product
 // @route    GET /v1/products/:id
 // @access   Public

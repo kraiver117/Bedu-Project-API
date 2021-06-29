@@ -7,7 +7,8 @@ const {
    updateProduct,
    searchProducts,
    createProductReview,
-   deleteProduct
+   deleteProduct,
+   getRandomProducts
 } = require('../controllers/product');
 
 const Product = require('../models/Product');
@@ -15,6 +16,7 @@ const Product = require('../models/Product');
 const advancedQueryResults = require('../middleware/advancedQueryResults');
 const { protect, authorize } = require('../middleware/auth');
 
+router.get('/random', getRandomProducts);
 router.get('/', advancedQueryResults(Product), getAllProducts);
 router.get('/:id', getProductById);
 router.get('/search/:keyword', searchProducts);
