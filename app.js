@@ -35,7 +35,7 @@ app.get('/v1/config/paypal', (req, res) =>
 //Middleware to handling errors
 app.use(errorHandler);
 
-const server = app.listen(process.env.PORT || 3000, function () {
+const server = app.listen(process.env.PORT || 3001, function () {
     console.log(`Server Running in port ${server.address().port}`.yellow.bold);
 });
 
